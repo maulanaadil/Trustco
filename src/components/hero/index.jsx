@@ -1,10 +1,34 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import './styles.css';
+import { Link } from 'react-scroll/modules';
+
+const variants = {
+  hidden: {
+    scale: 0.8,
+    scale: 0,
+  },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      stiffness: 100,
+      delay: 0.4,
+    },
+  },
+};
 
 export default function Hero() {
   return (
-    <div className='bg-transparent pb-12 overflow-y-hidden' id='hero'>
+    <motion.div
+      className='bg-transparent pb-12 overflow-y-hidden'
+      id='hero'
+      initial='hidden'
+      animate='visible'
+      variants={variants}
+    >
       <dh-component>
         <div className='bg-transparent'>
           <div className='container mx-auto flex flex-col items-center py-12 sm:py-24'>
@@ -23,16 +47,24 @@ export default function Hero() {
               </p>
             </div>
             <div className='flex justify-center items-center'>
-              <button className='focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-indigo-700 py-2 sm:py-4 text-sm'>
+              <Link
+                to='projects'
+                smooth={true}
+                className='focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-indigo-700 py-2 sm:py-4 text-sm cursor-pointer'
+              >
                 See Projects
-              </button>
-              <button className='ml-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-transparent transition duration-150 ease-in-out hover:border-indigo-600 lg:text-xl lg:font-bold  hover:text-indigo-600 rounded border border-indigo-700 text-indigo-700 px-4 sm:px-10 py-2 sm:py-4 text-sm'>
+              </Link>
+              <Link
+                to='footer'
+                smooth={true}
+                className='ml-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-transparent transition duration-150 ease-in-out hover:border-indigo-600 lg:text-xl lg:font-bold  hover:text-indigo-600 rounded border border-indigo-700 text-indigo-700 px-4 sm:px-10 py-2 sm:py-4 text-sm cursor-pointer'
+              >
                 Contact Us
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </dh-component>
-    </div>
+    </motion.div>
   );
 }
