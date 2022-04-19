@@ -37,10 +37,9 @@ export default function Footer() {
                 TrustCo.
               </h6>
               <p className='text-justify'>
-                Excepteur velit ad aliquip qui. Occaecat est velit consectetur
-                duis et fugiat Lorem non non minim Lorem. Exercitation duis esse
-                et officia proident. Officia et consectetur dolor sunt
-                voluptate.
+                Trusco is a quality modern website creation service that
+                prioritizes quality and was developed by experienced developers
+                and designers.
               </p>
             </div>
             <div className=''>

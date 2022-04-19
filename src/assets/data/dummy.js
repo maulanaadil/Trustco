@@ -1,28 +1,30 @@
 export default [
   {
-    title: "Rogue's Rise",
+    title: 'Evocative Club',
     description:
-      'Deserunt velit anim cupidatat mollit mollit ipsum laborum laborum sunt.',
-    image: 'https://bit.ly/3BQdTqk',
-    link: 'https://google.com',
+      'Evocative is a streetwear brand that introduces various cultures from around the globe through our products. Our mission is to perfect youth fashion style with our product and we also have a vision to be a pioneer of clothing brand in Indonesia.',
+    image: 'https://www.maulnad.space/images/projects/project-5.png',
+    link: 'https://evocativeclub.com/',
   },
   {
-    title: "Fool's End",
-    description: 'Anim cillum aute sunt enim Lorem voluptate.',
-    image: 'https://bit.ly/3CQFPvv',
-    link: 'https://google.com',
-  },
-  {
-    title: 'A Greater Power',
+    title: 'Virtue Pictures',
     description:
-      'Nostrud ullamco commodo duis esse cillum exercitation laborum velit id officia.',
-    image: 'https://bit.ly/3ERuyMd',
-    link: 'https://google.com',
+      'A main page (Landing Page) on the virtue pictures company that informs everything that is served by the company.',
+    image: 'https://www.maulnad.space/images/projects/project-4.png',
+    link: 'https://virtuepictures.com/',
   },
   {
-    title: '2099: Oasis',
-    description: 'Consequat quis non esse laboris amet.',
-    image: 'https://bit.ly/3CQKSwb',
-    link: 'https://google.com',
+    title: 'Staycation',
+    description:
+      'an application that helps in making hotel reservations and helps find the best hotel recommendations in Indonesia and provides tourist attractions closest to the hotel you choose.',
+    image: 'https://www.maulnad.space/images/projects/project-1.png',
+    link: 'https://sstaycation.herokuapp.com/',
+  },
+  {
+    title: 'Informasi Pembayaran PDAM',
+    description:
+      'Website to help PDAM clients check water usage pricing information ',
+    image: 'https://www.maulnad.space/images/projects/campus-project-1.png',
+    link: 'http://tugasbesar.maulnad.my.id/',
   },
 ];
