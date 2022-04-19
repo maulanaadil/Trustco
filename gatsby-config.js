@@ -3,5 +3,18 @@ module.exports = {
     title: `trustco`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
-}
+  plugins: [
+    {
+      resolve: `gatsby-alias-imports`,
+      options: {
+        aliases: {
+          '@styles': `src/styles`,
+          config: `config/`,
+          '@utils': 'src/utils/',
+          '@components': 'src/components/',
+        },
+      },
+    },
+    'gatsby-plugin-postcss',
+  ],
+};
