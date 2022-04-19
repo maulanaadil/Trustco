@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `trustco`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://trustco.vercel.app/`,
+    description: `Trusco is a quality modern website creation service that
+                prioritizes quality and was developed by experienced developers
+                and designers.`,
   },
   plugins: [
     {
