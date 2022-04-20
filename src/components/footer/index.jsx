@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import { Popover } from '@headlessui/react';
 
 export default function Footer() {
@@ -72,9 +73,14 @@ export default function Footer() {
                 Useful links
               </h6>
               <p className='mb-4'>
-                <a href='#!' className='text-gray-500 hover:text-gray-900'>
+                <Link
+                  to='projects'
+                  smooth={true}
+                  spy={true}
+                  className='text-gray-500 hover:text-gray-900 cursor-pointer'
+                >
                   Projects
-                </a>
+                </Link>
               </p>
             </div>
             <div className=''>

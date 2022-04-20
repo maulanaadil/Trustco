@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { AiFillHeart } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 const Card = ({ title, description, image, link }) => {
   const [likes, setLikes] = useState(0);
@@ -10,7 +11,13 @@ const Card = ({ title, description, image, link }) => {
   };
 
   return (
-    <div className='bg-white hover:bg-gray-100 shadow-lg hover:shadow-none cursor-pointer w-80 rounded-3xl flex flex-col items-center justify-center transition-all duration-500 ease-in-out'>
+    <motion.div
+      whileHover={{
+        scale: 1.2,
+        transition: 1,
+      }}
+      className='bg-white hover:bg-gray-100 shadow-lg hover:shadow-none cursor-pointer w-80 rounded-3xl flex flex-col items-center justify-center transition-all duration-500 ease-in-out'
+    >
       <div className='relative mt-2 mx-2'>
         <Link to={link} className='h-56 rounded-2xl overflow-hidden'>
           <img
@@ -33,7 +40,7 @@ const Card = ({ title, description, image, link }) => {
         <h1 className=' font-medium leading-none text-base tracking-wider text-gray-800'>{`${title}`}</h1>
         <p className=' font-normal text-sm mt-2 tracking-wider text-gray-400'>{`${description}`}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
