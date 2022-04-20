@@ -2,7 +2,7 @@ export default [
   {
     title: 'Evocative Club',
     description:
-      'Evocative is a streetwear brand that introduces various cultures from around the globe through our products. Our mission is to perfect youth fashion style with our product and we also have a vision to be a pioneer of clothing brand in Indonesia.',
+      'Evocative is a streetwear brand that introduces various cultures from around the globe through our products.',
     image: 'https://www.maulnad.space/images/projects/project-5.png',
     link: 'https://evocativeclub.com/',
   },
@@ -16,7 +16,7 @@ export default [
   {
     title: 'Staycation',
     description:
-      'an application that helps in making hotel reservations and helps find the best hotel recommendations in Indonesia and provides tourist attractions closest to the hotel you choose.',
+      'an application that helps in making hotel reservations and helps find the best hotel recommendations in Indonesia',
     image: 'https://www.maulnad.space/images/projects/project-1.png',
     link: 'https://sstaycation.herokuapp.com/',
   },
