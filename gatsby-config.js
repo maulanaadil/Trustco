@@ -5,6 +5,7 @@ module.exports = {
     description: `Trusco is a quality modern website creation service that
                 prioritizes quality and was developed by experienced developers
                 and designers.`,
+    icon: `assets/favicon.ico`,
   },
   plugins: [
     {
@@ -21,5 +22,17 @@ module.exports = {
       },
     },
     'gatsby-plugin-postcss',
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Trustco',
+        short_name: 'Trustco',
+        start_url: '/',
+        display: 'standalone',
+        icon: 'src/assets/favicon.ico', // This path is relative to the root of the site.
+        crossOrigin: `use-credentials`,
+      },
+    },
   ],
 };
