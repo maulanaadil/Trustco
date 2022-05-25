@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className='container mx-auto' id='footer'>
       <Popover className='text-center lg:text-left bg-transparent border-t-2 border-gray-100 text-gray-600'>
-        <div className='mx-28 py-10 text-center md:text-left'>
+        <div className='mx-6 lg:mx-28 py-10 text-center md:text-left'>
           <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center'>
             <div className=''>
               <h6

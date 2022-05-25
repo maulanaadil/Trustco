@@ -43,6 +43,7 @@ export default function Header() {
               <div className='hidden md:block md:space-x-8'>
                 {navigation.map((item) => (
                   <Link
+                    key={item.name}
                     to={item.to}
                     spy={true}
                     smooth={true}
@@ -80,6 +81,7 @@ export default function Header() {
                 <div className='px-2 pt-2 pb-3 space-y-1'>
                   {navigation.map((item) => (
                     <Link
+                      key={item.name}
                       to={item.to}
                       spy={true}
                       smooth={true}
