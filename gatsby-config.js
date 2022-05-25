@@ -5,6 +5,8 @@ module.exports = {
     description: `Trusco is a quality modern website creation service that
                 prioritizes quality and was developed by experienced developers
                 and designers.`,
+    author: `TrustCo`,
+    keywords: `#Web Development, #Web Design, #Software Development`,
     icon: `assets/favicon.ico`,
   },
   plugins: [
