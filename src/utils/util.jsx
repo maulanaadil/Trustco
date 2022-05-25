@@ -3,7 +3,7 @@ import { useLayoutEffect, useState } from 'react';
 export const useSizeComponents = (ref) => {
   const [size, setSize] = useState([0, 0]);
 
-  useLayoutEffect(() => {
+  useLayoutEffect((ref) => {
     const updateSize = () => {
       let newSize = [window.innerWidth, window.innerHeight];
       if (ref?.current) {

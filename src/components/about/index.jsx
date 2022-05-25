@@ -6,7 +6,7 @@ import AnimationAbout from '../../assets/lotties/team-work.json';
 import { useSizeComponents } from '../../utils/util';
 
 export default function About() {
-  const [width, height] = useSizeComponents();
+  const [width] = useSizeComponents();
   const scaleLottie = 0.5;
 
   const defaultOptions = {

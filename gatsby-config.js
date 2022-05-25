@@ -10,6 +10,11 @@ module.exports = {
     icon: `assets/favicon.ico`,
   },
   plugins: [
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-alias-imports`,
       options: {
@@ -23,8 +28,6 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-postcss',
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

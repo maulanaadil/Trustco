@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { AiFillHeart } from 'react-icons/ai';
 import { motion } from 'framer-motion';
@@ -23,7 +24,7 @@ const Card = ({ title, description, image, link }) => {
           <img
             src={image}
             className='object-cover w-full h-full'
-            alt={`image-${title}`}
+            alt={`${title}`}
           />
         </Link>
         <div className='absolute bottom-0 left-0 -mb-4 ml-3 flex flex-row'>
@@ -42,6 +43,13 @@ const Card = ({ title, description, image, link }) => {
       </div>
     </motion.div>
   );
+};
+
+Card.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.string,
+  link: PropTypes.string,
 };
 
 export default Card;

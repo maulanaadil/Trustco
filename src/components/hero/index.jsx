@@ -6,7 +6,6 @@ import { Link } from 'react-scroll/modules';
 
 const variants = {
   hidden: {
-    scale: 0.8,
     scale: 0,
   },
   visible: {

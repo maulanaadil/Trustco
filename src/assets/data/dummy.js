@@ -1,4 +1,4 @@
-export default [
+export const data = [
   {
     title: 'Evocative Club',
     description:
@@ -28,3 +28,5 @@ export default [
     link: 'http://tugasbesar.maulnad.my.id/',
   },
 ];
+
+export default data;
