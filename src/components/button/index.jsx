@@ -1,0 +1,46 @@
+import React from 'react'
+import { classnames } from 'tailwindcss-classnames'
+
+import PropTypes from 'prop-types'
+import * as styles from './styles'
+import { getSizeStyle, getVariantStyle } from './helpers'
+
+export default function Button({
+    children,
+    onClick,
+    variant,
+    size,
+    disabled,
+    disabledOutline,
+    fullWidth,
+    ...otherProps
+}) {
+    return (
+        <button
+            className={classnames(
+                styles.sButton,
+                getVariantStyle(variant),
+                getSizeStyle(size),
+                {
+                    [styles.sButtonDisabled]: disabled,
+                    [styles.sButtonDisabledOutline]: disabledOutline,
+                    [styles.sButtonFullWidth]: fullWidth,
+                }
+            )}
+            onClick={onClick}
+            {...otherProps}
+        >
+            {children}
+        </button>
+    )
+}
+
+Button.propTypes = {
+    children: PropTypes.node.isRequired,
+    onClick: PropTypes.func.isRequired,
+    variant: PropTypes.oneOf(['primary', 'secondary']).isRequired,
+    size: PropTypes.oneOf(['normal', 'large']),
+    disabled: PropTypes.bool,
+    disabledOutline: PropTypes.bool,
+    fullWidth: PropTypes.bool,
+}
