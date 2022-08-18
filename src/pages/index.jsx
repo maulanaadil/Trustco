@@ -1,17 +1,21 @@
-import React from 'react';
-import Layout from '@components/layout';
-import Hero from '@components/hero';
-import About from '@components/about';
-import Project from '@components/project';
+import React from 'react'
+import { Button } from '@components'
 
 const IndexPage = () => {
-  return (
-    <Layout>
-      <Hero />
-      <About />
-      <Project />
-    </Layout>
-  );
-};
+    return (
+        <div>
+            <Button variant='primary' fullWidth>
+                Example Button
+            </Button>
+            <Button variant='secondaryOutline' size='normal'>
+                Example Button
+            </Button>
 
-export default IndexPage;
+            <Button variant='normal' disabledOutline>
+                Example Button
+            </Button>
+        </div>
+    )
+}
+
+export default IndexPage
