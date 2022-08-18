@@ -6,7 +6,11 @@ export const sButton = classnames(
     'transition-all',
     'duration-300',
     'text-normal-primary-white',
-    'font-medium'
+    'font-medium',
+    'flex',
+    'items-center',
+    'justify-center',
+    'gap-[10px]'
 )
 
 export const sButtonFullWidth = classnames('w-full')
