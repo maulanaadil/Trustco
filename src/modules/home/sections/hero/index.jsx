@@ -17,7 +17,7 @@ import * as styles from './styles'
 
 export default function HeroSection() {
     return (
-        <div className={styles.sHero}>
+        <section className={styles.sHero}>
             <LeftSideLine className={styles.sLeftSideLine} />
             <SquareShape
                 className={styles.sFloatSquareBlackShape}
@@ -70,6 +70,6 @@ export default function HeroSection() {
                     Start a Project
                 </Button>
             </div>
-        </div>
+        </section>
     )
 }
