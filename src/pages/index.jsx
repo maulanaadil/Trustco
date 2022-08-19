@@ -1,11 +1,12 @@
 import React from 'react'
 
-import { Header } from '@layouts'
+import { Layout } from '@layouts'
+import { HomeModules } from '@modules'
 
 export default function IndexPage() {
     return (
-        <>
-            <Header />
-        </>
+        <Layout>
+            <HomeModules />
+        </Layout>
     )
 }
