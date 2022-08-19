@@ -1,3 +1,4 @@
 import HeroSection from './hero'
+import ClientSection from './client'
 
-export { HeroSection }
+export { HeroSection, ClientSection }
