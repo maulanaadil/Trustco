@@ -1,3 +1,4 @@
-import Button from './button';
+import Button from './button'
+import Brand from './brand'
 
-export { Button };
+export { Button, Brand }
