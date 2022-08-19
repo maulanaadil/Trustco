@@ -14,6 +14,7 @@ export default function Button({
     disabledOutline,
     fullWidth,
     icon,
+    type,
     ...otherProps
 }) {
     return (
@@ -30,6 +31,7 @@ export default function Button({
             )}
             onClick={onClick}
             {...otherProps}
+            type={type}
         >
             {icon} {children}
         </button>
@@ -45,4 +47,5 @@ Button.propTypes = {
     disabledOutline: PropTypes.bool,
     fullWidth: PropTypes.bool,
     icon: PropTypes.node,
+    type: PropTypes.string,
 }
