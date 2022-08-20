@@ -5,7 +5,7 @@ import * as styles from './styles'
 
 export default function AboutSection() {
     return (
-        <div className={styles.sAbout}>
+        <section className={styles.sAbout}>
             <BlobShape className={styles.sFloatBlobShape} />
             <BlobOutlineShape className={styles.sFloatBlobOutlineShape} />
             <div className={styles.sAboutContent}>
@@ -20,6 +20,6 @@ export default function AboutSection() {
                     for clients.
                 </p>
             </div>
-        </div>
+        </section>
     )
 }
