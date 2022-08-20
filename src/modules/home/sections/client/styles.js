@@ -1,6 +1,6 @@
 import { classnames } from 'tailwindcss-classnames'
 
-export const sClient = classnames('w-full', 'max-h-[250px]')
+export const sClient = classnames('w-full')
 
 export const sClientWrapper = classnames(
     'max-w-[900px]',
