@@ -2,7 +2,8 @@ import classnames from 'tailwindcss-classnames'
 
 export const sHero = classnames(
     'w-full',
-    'h-[530px]',
+    'h-full',
+    'min-h-[530px]',
     'bg-secondary-onyx',
     'relative'
 )
