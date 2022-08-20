@@ -17,7 +17,7 @@ import * as styles from './styles'
 
 export default function HeroSection() {
     return (
-        <div className={styles.sHero}>
+        <section className={styles.sHero}>
             <LeftSideLine className={styles.sLeftSideLine} />
             <SquareShape
                 className={styles.sFloatSquareBlackShape}
@@ -55,7 +55,7 @@ export default function HeroSection() {
             />
             <DotShape className={styles.sFloatDotShape} />
             <div className={styles.sHeroContent}>
-                <h1 className={'text-heading1 text-primary-white text-center'}>
+                <h1 className={styles.sHeroText}>
                     We help you Create <br />
                     the Product
                     <br />
@@ -70,6 +70,6 @@ export default function HeroSection() {
                     Start a Project
                 </Button>
             </div>
-        </div>
+        </section>
     )
 }

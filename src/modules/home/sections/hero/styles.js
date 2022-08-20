@@ -21,6 +21,13 @@ export const sHeroContent = classnames(
     'm-auto'
 )
 
+export const sHeroText = classnames(
+    'text-heading1',
+    'font-medium',
+    'text-primary-white',
+    ' text-center '
+)
+
 export const sLeftSideLine = classnames('absolute', 'bottom-[23px]', 'left-0')
 
 export const sRightSideLine = classnames('absolute', 'top-[36px]', 'right-0')
