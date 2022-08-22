@@ -4,6 +4,7 @@ import {
     AboutSection,
     HeroSection,
     HowWeWorkSection,
+    ProjectsSection,
 } from './sections'
 
 import * as styles from './styles'
@@ -15,6 +16,7 @@ export default function HomeModules() {
             <ClientSection />
             <AboutSection />
             <HowWeWorkSection />
+            <ProjectsSection />
         </div>
     )
 }
