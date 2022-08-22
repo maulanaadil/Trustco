@@ -1,5 +1,10 @@
 import React from 'react'
-import { ClientSection, AboutSection, HeroSection } from './sections'
+import {
+    ClientSection,
+    AboutSection,
+    HeroSection,
+    HowWeWorkSection,
+} from './sections'
 
 import * as styles from './styles'
 
@@ -9,6 +14,7 @@ export default function HomeModules() {
             <HeroSection />
             <ClientSection />
             <AboutSection />
+            <HowWeWorkSection />
         </div>
     )
 }

@@ -15,7 +15,6 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
     "framer-motion": "^7.2.0",
     "gatsby": "^4.21.1",
     "gatsby-alias-imports": "^1.0.6",
@@ -25,10 +24,10 @@
     "gatsby-plugin-sharp": "^4.21.0",
     "gatsby-source-filesystem": "^4.21.1",
     "gatsby-transformer-sharp": "^4.21.0",
+    "lottie-web": "^5.9.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-lottie": "^1.2.3",
     "tailwindcss-classnames": "^3.0.6"
   },
   "devDependencies": {

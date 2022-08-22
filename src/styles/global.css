@@ -17,3 +17,9 @@ body {
 
     background-color: var(--primary-background-color);
 }
+
+@layer components {
+    .text-content-active {
+        opacity: 1 !important;
+    }
+}
