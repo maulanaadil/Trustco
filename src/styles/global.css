@@ -22,4 +22,8 @@ body {
     .text-content-active {
         opacity: 1 !important;
     }
+
+    .card-transition {
+        @apply transition-all ease-out duration-500;
+    }
 }
