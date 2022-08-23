@@ -3,6 +3,7 @@ import ClientSection from './client'
 import AboutSection from './about'
 import HowWeWorkSection from './howWeWork'
 import ProjectsSection from './projects'
+import IntrestedSection from './intrested'
 
 export {
     HeroSection,
@@ -10,4 +11,5 @@ export {
     AboutSection,
     HowWeWorkSection,
     ProjectsSection,
+    IntrestedSection,
 }
