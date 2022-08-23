@@ -46,7 +46,6 @@ export default function HowWeWorkSection() {
             removeTextSection(scrollPosition)
 
             changeTextHandler(scrollPosition)
-            console.log(scrollPosition)
         }
 
         document.addEventListener('scroll', onScroll)
