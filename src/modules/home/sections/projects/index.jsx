@@ -10,7 +10,7 @@ import StayCation from './assets/logoClient/staycation-project.png'
 
 export default function ProjectsSection() {
     return (
-        <section className={styles.sProjects}>
+        <section className={styles.sProjects} id='projects'>
             <div className={styles.sProjectsTitleWrapper}>
                 <h2 className={styles.sProjectsTitle}>Selected Projects</h2>
                 <h5 className={styles.sProjectSubTitle}>

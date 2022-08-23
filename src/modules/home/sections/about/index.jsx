@@ -5,7 +5,7 @@ import * as styles from './styles'
 
 export default function AboutSection() {
     return (
-        <section className={styles.sAbout}>
+        <section className={styles.sAbout} id='about-us'>
             <BlobShape className={styles.sFloatBlobShape} />
             <BlobOutlineShape className={styles.sFloatBlobOutlineShape} />
             <div className={styles.sAboutContent}>
