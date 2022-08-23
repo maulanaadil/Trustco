@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 import * as styles from './styles'
 
+import { BlobShape, BlobOutlineShape } from './assets'
 import StayCationLogo from './assets/logoClient/staycation.png'
 import StayCation from './assets/logoClient/staycation-project.png'
 
@@ -20,6 +21,8 @@ export default function ProjectsSection() {
                     next
                 </h5>
             </div>
+            <BlobShape className='absolute max-w-[520px] left-[-50px] bottom-0 z-[-2]' />
+            <BlobOutlineShape className='absolute max-w-[520px] left-[-50px] bottom-[-20px] z-[-2]' />
             <div className={styles.sProjectContainer}>
                 <ProjectItem
                     id={1}
