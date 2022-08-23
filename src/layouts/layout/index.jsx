@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Header, Head } from '@layouts'
+import { Header, Head, Footer } from '@layouts'
 
 export default function Layout({ children }) {
     return (
@@ -9,6 +9,7 @@ export default function Layout({ children }) {
             <Head />
             <Header />
             {children}
+            <Footer />
         </>
     )
 }
