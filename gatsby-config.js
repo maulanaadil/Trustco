@@ -25,6 +25,7 @@ module.exports = {
                     '@components': 'src/components',
                     '@layouts': 'src/layouts',
                     '@modules': 'src/modules',
+                    '@hooks': 'src/hooks',
                 },
             },
         },
