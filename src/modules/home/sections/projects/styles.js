@@ -1,6 +1,6 @@
 import { classnames } from 'tailwindcss-classnames'
 
-export const sProjects = classnames('w-full', 'relative')
+export const sProjects = classnames('w-full', 'relative', 'pt-[100px]')
 
 export const sProjectsTitleWrapper = classnames(
     'mx-auto',
@@ -36,4 +36,72 @@ export const sProjectContainer = classnames(
     'auto-rows-minmax(400px, auto)',
     'gap-x-[40px]',
     'z-10'
+)
+
+export const sProjectItem = classnames('w-full', 'h-full', 'col-span-5')
+
+export const sProjectItemImageContainer = classnames(
+    'relative',
+    'w-full',
+    'h-3/4',
+    'overflow-hidden',
+    'rounded-md',
+    'drop-shadow-md',
+    'shadow-secondary-onyx'
+)
+
+export const sProjectItemOverlay = classnames(
+    'w-full',
+    ' h-full',
+    'absolute',
+    'flex',
+    'justify-center',
+    'items-center',
+    'bg-cover',
+    'bg-center',
+    'bg-secondary-onyx',
+    'opacity-[0.9]',
+    'card-transition',
+    'hover:opacity-0'
+)
+
+export const sProjectItemLogo = classnames(
+    'h-[150px]',
+    'object-cover',
+    'bg-center',
+    'bg-cover'
+)
+
+export const sProjectItemImageWrapper = classnames(
+    'w-full',
+    'h-full',
+    'object-cover'
+)
+
+export const sProjectItemImage = classnames(
+    'object-cover',
+    'bg-center',
+    'bg-cover'
+)
+
+export const sProjectItemContent = classnames('flex', 'justify-between')
+
+export const sProjectItemContentWrapper = classnames('flex', 'flex-col')
+
+export const sProjectItemTitle = classnames(
+    'text-large',
+    'font-medium',
+    'text-secondary-gray2'
+)
+
+export const sProjectItemType = classnames(
+    'text-normal',
+    'font-light',
+    'text-secondary-gray2'
+)
+
+export const sProjectItemYear = classnames(
+    'text-large',
+    'font-light',
+    'text-secondary-gray2'
 )

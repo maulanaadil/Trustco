@@ -1,8 +1,8 @@
 import classnames from 'tailwindcss-classnames'
 
-export const sPinSpacer = classnames('w-full', 'pb-[9330px]', 'relative')
+export const sPinSpacer = classnames('w-full', 'h-[9000px]', 'relative')
 
-export const sHowWeWork = classnames('w-full', 'left-0', 'top-0')
+export const sHowWeWork = classnames('w-full', 'absolute')
 
 export const sHowWeWorkContainer = classnames('fixed')
 

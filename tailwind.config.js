@@ -18,7 +18,7 @@ module.exports = {
             large: ['24px', '38.17px'],
             medium: ['18px', '25.2px'],
             normal: ['16px', '22.4px'],
-            small: ['16px', '19.08px'],
+            small: ['12px', '19.08px'],
         },
         colors: {
             primary: {
