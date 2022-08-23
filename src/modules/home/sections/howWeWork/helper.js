@@ -191,9 +191,12 @@ export const changeTextHandler = (breakpoint) => {
 export const containerDisplayOnChange = (breakpoint) => {
     if (breakpoint > 1200) {
         document.getElementById('how-we-work').style.position = 'fixed'
+        document.getElementById('how-we-work').style.top = '0'
     } else if (breakpoint < 1200) {
         document.getElementById('how-we-work').style.position = 'static'
-    } else if (breakpoint > 9572) {
-        document.getElementById('how-we-work').style.position = 'static'
+    }
+    if (breakpoint > 9500) {
+        document.getElementById('how-we-work').style.position = 'sticky'
+        document.getElementById('how-we-work').style.bottom = '0'
     }
 }
