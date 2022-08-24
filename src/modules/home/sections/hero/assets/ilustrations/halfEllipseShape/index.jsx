@@ -2,6 +2,7 @@ import React from 'react'
 
 import { motion } from 'framer-motion'
 
+import { animateBounce } from '../animation'
 import PropTypes from 'prop-types'
 
 export default function HalfEllipseShape({ className }) {
@@ -11,6 +12,10 @@ export default function HalfEllipseShape({ className }) {
             height='156'
             viewBox='0 0 200 156'
             fill='none'
+            initial='hidden'
+            animate='visible'
+            variants={animateBounce}
+            custom={1}
             className={className}
             xmlns='http://www.w3.org/2000/svg'
         >

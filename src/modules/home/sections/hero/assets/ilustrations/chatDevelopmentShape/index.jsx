@@ -2,27 +2,10 @@ import React from 'react'
 
 import { motion } from 'framer-motion'
 
+import { animateBounce } from '../animation'
 import PropTypes from 'prop-types'
 
 export default function ChatDevelopmentShape({ className }) {
-    const animate = {
-        hidden: {
-            opacity: 0,
-        },
-        visible: (custom) => ({
-            opacity: 1,
-            y: ['-5%', '0%'],
-            transition: {
-                y: {
-                    duration: custom,
-                    yoyo: Infinity,
-                    ease: 'easeOut',
-                    opacity: 1,
-                    duration: 0.8,
-                },
-            },
-        }),
-    }
     return (
         <motion.svg
             width='331'
@@ -31,7 +14,7 @@ export default function ChatDevelopmentShape({ className }) {
             fill='none'
             initial='hidden'
             animate='visible'
-            variants={animate}
+            variants={animateBounce}
             custom={1}
             className={className}
             xmlns='http://www.w3.org/2000/svg'

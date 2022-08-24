@@ -2,6 +2,7 @@ import React from 'react'
 
 import { motion } from 'framer-motion'
 
+import { animateBounce } from '../animation'
 import PropTypes from 'prop-types'
 
 export default function PillShape({ className }) {
@@ -11,6 +12,10 @@ export default function PillShape({ className }) {
             height='237'
             viewBox='0 0 234 237'
             fill='none'
+            initial='hidden'
+            animate='visible'
+            variants={animateBounce}
+            custom={1}
             className={className}
             xmlns='http://www.w3.org/2000/svg'
         >

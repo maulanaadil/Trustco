@@ -2,20 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import PropTypes from 'prop-types'
 
-const draw = {
-    hidden: { pathLength: 0, opacity: 0 },
-    visible: (i) => {
-        const delay = 1 + i * 0.5
-        return {
-            pathLength: 1,
-            opacity: 1,
-            transition: {
-                pathLength: { delay, type: 'spring', duration: 1.5, bounce: 0 },
-                opacity: { delay, duration: 0.01 },
-            },
-        }
-    },
-}
+import { animateDrawLine } from '../animation'
 
 export default function LeftSideLine({ className }) {
     return (
@@ -35,7 +22,7 @@ export default function LeftSideLine({ className }) {
                 strokeWidth='4'
                 strokeLinecap='round'
                 strokeLinejoin='round'
-                variants={draw}
+                variants={animateDrawLine}
                 custom={1}
             />
             <motion.rect
@@ -45,7 +32,7 @@ export default function LeftSideLine({ className }) {
                 height='12'
                 rx='6'
                 fill='#1F2937'
-                variants={draw}
+                variants={animateDrawLine}
                 custom={3.2}
             />
             <motion.rect
@@ -54,7 +41,7 @@ export default function LeftSideLine({ className }) {
                 height='16'
                 rx='8'
                 fill='#1F2937'
-                variants={draw}
+                variants={animateDrawLine}
                 custom={1.2}
             />
         </motion.svg>
