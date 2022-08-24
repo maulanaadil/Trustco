@@ -16,7 +16,7 @@ export default function AboutSection() {
             opacity: 1,
             transition: {
                 ease: 'easeOut',
-                duration: 0.5,
+                duration: 3,
             },
         },
     }
@@ -27,7 +27,6 @@ export default function AboutSection() {
             initial={!isInView ? 'hidden' : ''}
             animate={isInView ? 'visible' : ''}
             variants={animateSection}
-            custom={1}
             className={styles.sAbout}
             id='about-us'
         >
