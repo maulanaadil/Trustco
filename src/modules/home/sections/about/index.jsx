@@ -1,11 +1,36 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 import { BlobOutlineShape, BlobShape } from './assets'
 
 import * as styles from './styles'
 
 export default function AboutSection() {
+    const aboutRef = useRef(null)
+    const isInView = useInView(aboutRef)
+
+    const animateSection = {
+        hidden: {
+            opacity: 0,
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                ease: 'easeOut',
+                duration: 0.5,
+            },
+        },
+    }
+
     return (
-        <section className={styles.sAbout} id='about-us'>
+        <motion.section
+            ref={aboutRef}
+            initial={!isInView ? 'hidden' : ''}
+            animate={isInView ? 'visible' : ''}
+            variants={animateSection}
+            custom={1}
+            className={styles.sAbout}
+            id='about-us'
+        >
             <BlobShape className={styles.sFloatBlobShape} />
             <BlobOutlineShape className={styles.sFloatBlobOutlineShape} />
             <div className={styles.sAboutContent}>
@@ -20,6 +45,6 @@ export default function AboutSection() {
                     for clients.
                 </p>
             </div>
-        </section>
+        </motion.section>
     )
 }
