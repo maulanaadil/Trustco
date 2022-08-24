@@ -13,9 +13,16 @@ import {
     TestingEllipseShape,
 } from './assets'
 
+import { motion } from 'framer-motion'
+
+import * as animation from './animation'
 import * as styles from './styles'
 
 export default function HeroSection() {
+    const line = 'We help you Create'
+    const line2 = 'the Product'
+    const line3 = 'You Want'
+
     return (
         <section className={styles.sHero}>
             <LeftSideLine className={styles.sLeftSideLine} />
@@ -55,13 +62,45 @@ export default function HeroSection() {
             />
             <DotShape className={styles.sFloatDotShape} />
             <div className={styles.sHeroContent}>
-                <h1 className={styles.sHeroText}>
-                    We help you Create <br />
-                    the Product
+                <motion.h1
+                    className={styles.sHeroText}
+                    variants={animation.animateSentence}
+                    custom={0.5}
+                    initial='hidden'
+                    animate='visible'
+                >
+                    {line.split('').map((char, index) => (
+                        <motion.span
+                            key={char + '-' + index}
+                            variants={animation.animateLetter}
+                        >
+                            {char}
+                        </motion.span>
+                    ))}
                     <br />
-                    You Want
-                </h1>
+                    {line2.split('').map((char, index) => (
+                        <motion.span
+                            key={char + '-' + index}
+                            variants={animation.animateLetter}
+                        >
+                            {char}
+                        </motion.span>
+                    ))}
+                    <br />
+                    {line3.split('').map((char, index) => (
+                        <motion.span
+                            key={char + '-' + index}
+                            variants={animation.animateLetter}
+                        >
+                            {char}
+                        </motion.span>
+                    ))}
+                </motion.h1>
                 <Button
+                    custom={2}
+                    initial='hidden'
+                    animate='visible'
+                    variants={animation.animateHeroButton}
                     size='large'
                     variant='primary'
                     onClick={() => {}}

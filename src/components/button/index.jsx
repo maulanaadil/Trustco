@@ -3,6 +3,7 @@ import { classnames } from 'tailwindcss-classnames'
 
 import PropTypes from 'prop-types'
 import * as styles from './styles'
+import { motion } from 'framer-motion'
 import { getSizeStyle, getVariantStyle } from './helpers'
 
 export default function Button({
@@ -18,7 +19,7 @@ export default function Button({
     ...otherProps
 }) {
     return (
-        <button
+        <motion.button
             className={classnames(
                 styles.sButton,
                 getVariantStyle(variant),
@@ -30,11 +31,11 @@ export default function Button({
                 }
             )}
             onClick={onClick}
-            {...otherProps}
             type={type}
+            {...otherProps}
         >
             {icon} {children}
-        </button>
+        </motion.button>
     )
 }
 
