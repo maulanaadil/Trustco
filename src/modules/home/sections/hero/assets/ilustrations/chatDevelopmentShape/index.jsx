@@ -5,12 +5,29 @@ import { motion } from 'framer-motion'
 import PropTypes from 'prop-types'
 
 export default function ChatDevelopmentShape({ className }) {
+    const bounceTransition = {
+        y: {
+            duration: 1,
+            yoyo: Infinity,
+            ease: 'easeOut',
+            opacity: 1,
+            duration: 0.8,
+        },
+    }
     return (
         <motion.svg
             width='331'
             height='216'
             viewBox='0 0 331 216'
             fill='none'
+            initial={{
+                opacity: 0,
+            }}
+            animate={{
+                opacity: 1,
+                y: ['-5%', '0%'],
+            }}
+            transition={bounceTransition}
             className={className}
             xmlns='http://www.w3.org/2000/svg'
         >
