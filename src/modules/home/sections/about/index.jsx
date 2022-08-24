@@ -8,10 +8,6 @@ export default function AboutSection() {
     const aboutRef = useRef(null)
     const isInView = useInView(aboutRef)
 
-    useEffect(() => {
-        console.log('Is in view')
-    }, [isInView])
-
     const animateSection = {
         hidden: {
             opacity: 0,
@@ -19,8 +15,8 @@ export default function AboutSection() {
         visible: {
             opacity: 1,
             transition: {
-                ease: 'easeInOut',
-                duration: 1,
+                ease: 'easeOut',
+                duration: 0.5,
             },
         },
     }
