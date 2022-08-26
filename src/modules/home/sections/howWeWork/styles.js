@@ -35,7 +35,10 @@ export const sHowWeWorkTextContent = classnames(
     'max-w-[565px]',
     'absolute',
     'top-[-100px]',
-    'opacity-0'
+    'opacity-0',
+    'transition-opacity',
+    'ease-out',
+    'duration-700'
 )
 
 export const sHowWeWorkContentWrapper = classnames(
