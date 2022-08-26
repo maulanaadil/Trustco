@@ -1,17 +1,23 @@
-import classnames from 'tailwindcss-classnames'
+import classnames, {
+    alignItems,
+    justifyContent,
+    display,
+    gap,
+    objectPosition,
+    objectFit,
+} from 'tailwindcss-classnames'
 
 export const sBrand = classnames(
-    'flex',
-    'gap-[8px]',
-    'justify-center',
-    'items-center'
+    display('flex', 'justify-center', 'items-center'),
+    justifyContent('justify-center'),
+    alignItems('items-center'),
+    gap('gap-[8px]')
 )
 
 export const sBrandLogo = classnames(
-    'w-[40px]',
-    'h-[40px]',
-    'object-cover',
-    'object-center'
+    display('w-[40px]', 'h-[40px]'),
+    objectPosition('object-center'),
+    objectFit('object-cover')
 )
 
 export const sBrandLogoText = classnames('text-normal', 'text-primary-white')
