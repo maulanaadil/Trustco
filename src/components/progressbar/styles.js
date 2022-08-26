@@ -1,22 +1,33 @@
-import classnames from 'tailwindcss-classnames'
+import classnames, {
+    backdropBlur,
+    position,
+    zIndex,
+    width,
+    height,
+    backgroundColor,
+    dropShadow,
+    inset,
+    transitionProperty,
+    transitionDuration,
+} from 'tailwindcss-classnames'
 
 export const sProgressBar = classnames(
-    'fixed',
-    'z-50',
-    'top-0',
-    'backdrop-blur-3xl',
-    'w-full',
-    'h-1',
-    'bg-transparent',
-    'drop-shadow-lg'
+    position('fixed'),
+    width('w-full'),
+    height('h-1'),
+    zIndex('z-50'),
+    backdropBlur('backdrop-blur-3xl'),
+    backgroundColor('bg-transparent'),
+    dropShadow('drop-shadow-lg'),
+    inset('top-0')
 )
 
 export const sProgressBarWidth = classnames(
-    'absolute',
-    'bottom-0',
-    'w-full',
-    'transition-transform',
-    'duration-150',
-    'h-1',
-    'bg-primary-cream'
+    position('absolute'),
+    inset('bottom-0'),
+    width('w-full'),
+    height('h-1'),
+    backgroundColor('bg-primary-cream'),
+    transitionProperty('transition-transform'),
+    transitionDuration('duration-150')
 )
