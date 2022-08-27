@@ -21,14 +21,14 @@ export default function Footer() {
                     <a href='https://wa.me/+6282218081639'>
                         <p className={styles.sFooterItem}>+62 82218081639</p>
                     </a>
-                    <a href='mailto: rifki@trustco.my.id'>
+                    <a href='mailto: rifki@trustcotech.my.id'>
                         <p className={styles.sFooterItem}>
-                            rifki@trustco.my.id
+                            rifki@trustcotech.my.id
                         </p>
                     </a>
-                    <a href='mailto: maulana@trustco.my.id'>
+                    <a href='mailto: maulana@trustcotech.my.id'>
                         <p className={styles.sFooterItem}>
-                            maulana@trustco.my.id
+                            maulana@trustcotech.my.id
                         </p>
                     </a>
                 </div>
