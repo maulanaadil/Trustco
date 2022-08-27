@@ -1,6 +1,7 @@
 import classnames, {
     display,
     flex,
+    flexDirection,
     fontSize,
     fontWeight,
     gap,
@@ -17,9 +18,10 @@ export const sAbout = classnames(display('w-full'), position('relative'))
 
 export const sAboutContent = classnames(
     flex('flex'),
-    gap('gap-[60px]'),
+    flexDirection('flex-col', 'md:flex-row'),
+    gap('gap-5', 'md:gap-[60px]'),
     margin('mx-auto'),
-    padding('py-[60px]'),
+    padding('px-[30px]', 'md:py-[60px]'),
     width('max-w-[926px]'),
     zIndex('z-10')
 )
