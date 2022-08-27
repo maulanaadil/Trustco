@@ -212,5 +212,4 @@ export const containerDisplayOnChange = (breakpoint) => {
             document.getElementById('how-we-work').style.bottom = '0'
         }
     }
-    console.log(breakpoint)
 }

@@ -58,7 +58,8 @@ export const sLeftSideLine = classnames(
 export const sRightSideLine = classnames(
     position('absolute'),
     width('w-6/12', 'md:w-fit'),
-    inset('top-[36px]', 'right-[-100px]', 'md:right-0')
+    visibility('invisible', 'md:visible'),
+    inset('top-[36px]', 'md:right-0')
 )
 
 export const sFloatSquareBlackShape = classnames(

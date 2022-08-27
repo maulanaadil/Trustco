@@ -34,7 +34,7 @@ import classnames, {
 export const sProjects = classnames(
     width('w-full'),
     position('relative'),
-    padding('pt-[100px]')
+    padding('pt-[300px]', 'md:pt-[100px]')
 )
 
 export const sProjectsTitleWrapper = classnames(
@@ -47,14 +47,14 @@ export const sProjectsTitleWrapper = classnames(
 )
 
 export const sProjectsTitle = classnames(
-    fontSize('text-heading2'),
+    fontSize('text-heading3', 'md:text-heading2'),
     fontWeight('font-medium'),
     textColor('text-primary-black'),
     textAlign('text-center')
 )
 
 export const sProjectSubTitle = classnames(
-    fontSize('text-heading5'),
+    fontSize('text-heading6', 'md:text-heading5'),
     fontWeight('font-medium'),
     textColor('text-secondary-gray2'),
     textAlign('text-center')
@@ -69,14 +69,15 @@ export const sProjectContainer = classnames(
     grid('grid'),
     gridColumn('grid-cols-10'),
     gridAutoRows('auto-rows-minmax(400px, auto)'),
-    gap('gap-x-[40px]'),
+    gap('gap-y-5', 'md:gap-y-0', 'md:gap-x-[40px]'),
     zIndex('z-10')
 )
 
 export const sProjectItem = classnames(
     width('w-full'),
     height('h-full'),
-    grid('col-span-5')
+    grid('col-span-10', 'md:col-span-5'),
+    padding('px-[30px]', 'md:px-0')
 )
 
 export const sProjectItemImageContainer = classnames(
