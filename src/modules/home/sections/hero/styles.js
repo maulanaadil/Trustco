@@ -1,106 +1,117 @@
-import classnames from 'tailwindcss-classnames'
+import classnames, {
+    alignItems,
+    backgroundColor,
+    flex,
+    flexDirection,
+    fontSize,
+    fontWeight,
+    gap,
+    height,
+    inset,
+    justifyContent,
+    margin,
+    maxWidth,
+    minHeight,
+    position,
+    textAlign,
+    textColor,
+    width,
+} from 'tailwindcss-classnames'
 
 export const sHero = classnames(
-    'w-full',
-    'h-full',
-    'min-h-[530px]',
-    'bg-secondary-onyx',
-    'relative'
+    width('w-full'),
+    height('h-full'),
+    minHeight('min-h-[530px]'),
+    backgroundColor('bg-secondary-onyx'),
+    position('relative')
 )
 
 export const sHeroContent = classnames(
-    'flex',
-    'flex-col',
-    'gap-[40px]',
-    'max-w-[600px]',
-    'justify-center',
-    'items-center',
-    'absolute',
-    'top-[40px]',
-    'left-0',
-    'right-0',
-    'm-auto'
+    flex('flex'),
+    flexDirection('flex-col'),
+    gap('gap-[40px]'),
+    maxWidth('max-w-[600px]'),
+    justifyContent('justify-center'),
+    alignItems('items-center'),
+    position('absolute'),
+    inset('top-[40px]'),
+    inset('left-0', 'right-0'),
+    margin('m-auto')
 )
 
 export const sHeroText = classnames(
-    'text-heading1',
-    'font-medium',
-    'text-primary-white',
-    ' text-center '
+    fontSize('text-heading1'),
+    fontWeight('font-medium'),
+    textColor('text-primary-white'),
+    textAlign('text-center')
 )
 
-export const sLeftSideLine = classnames('absolute', 'bottom-[23px]', 'left-0')
+export const sLeftSideLine = classnames(
+    position('absolute'),
+    inset('bottom-[23px]', 'left-0')
+)
 
-export const sRightSideLine = classnames('absolute', 'top-[36px]', 'right-0')
+export const sRightSideLine = classnames(
+    position('absolute'),
+    inset('top-[36px]', 'right-0')
+)
 
 export const sFloatSquareBlackShape = classnames(
-    'absolute',
-    'top-[30px]',
-    'left-[180px]'
+    position('absolute'),
+    inset('top-[30px]', 'left-[180px]')
 )
 
 export const sFloatSquareYellowShape = classnames(
-    'absolute',
-    'bottom-[131px]',
-    'left-[98px]'
+    position('absolute'),
+    inset('bottom-[131px]', 'left-[98px]')
 )
 
 export const sFloatTestingEllipseShape = classnames(
-    'absolute',
-    'bottom-[2px]',
-    'left-[33x]'
+    position('absolute'),
+    inset('bottom-[2px]', 'left-[33x]')
 )
 
 export const sFloatPolygonBlueShape = classnames(
-    'absolute',
-    'bottom-[29px]',
-    'left-[130px]'
+    position('absolute'),
+    inset('bottom-[29px]', 'left-[130px]')
 )
 
 export const sFloatChatDevelopmentShape = classnames(
-    'absolute',
-    'bottom-0',
-    'left-[219px]'
+    position('absolute'),
+    inset('bottom-0', 'left-[219px]')
 )
 
 export const sFloatDesignPillShape = classnames(
-    'absolute',
-    'bottom-0',
-    'left-[426px]'
+    position('absolute'),
+    inset('bottom-0', 'left-[426px]')
 )
 
 export const sFloatHalfElffShape = classnames(
-    'absolute',
-    'bottom-0',
-    'right-[341px]'
+    position('absolute'),
+    inset('bottom-0', 'right-[341px]')
 )
 
 export const sFloatPillShape = classnames(
-    'absolute',
-    'bottom-[16px]',
-    'right-[200px]'
+    position('absolute'),
+    inset('bottom-[16px]', 'right-[200px]')
 )
 
 export const sFloatSquareYellowRightShape = classnames(
-    'absolute',
-    'bottom-[28px]',
-    'right-[278px]'
+    position('absolute'),
+    inset('bottom-[28px]', 'right-[278px]')
 )
 
 export const sFloatSquarePinkShape = classnames(
-    'absolute',
-    'bottom-[139px]',
-    'right-[142px]'
+    position('absolute'),
+    inset('bottom-[139px]', 'right-[142px]')
 )
 
 export const sFloatPolygonWhiteShape = classnames(
-    'absolute',
-    'bottom-[-30px]',
-    'right-[40px]'
+    position('absolute'),
+    inset('bottom-[-30px]', 'right-[40px]')
 )
 
 export const sFloatDotShape = classnames(
-    'absolute',
-    'bottom-[27px]',
-    'right-[43px]'
+    position('absolute'),
+    inset('bottom-[27px]', 'right-[43px]')
 )
