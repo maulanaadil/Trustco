@@ -4,6 +4,7 @@ import classnames, {
     flexDirection,
     fontSize,
     fontWeight,
+    gap,
     height,
     inset,
     justifyContent,
@@ -43,6 +44,8 @@ export const sHowWeWorkTitle = classnames(
 
 export const sHowWeWorkContent = classnames(
     flex('flex'),
+    gap('gap-4', 'md:gap-0'),
+    flexDirection('flex-col', 'md:flex-row'),
     justifyContent('justify-center'),
     alignItems('items-center'),
     margin('mx-auto'),
@@ -58,6 +61,9 @@ export const sHowWeWorkAnimationWrapper = classnames(
 export const sHowWeWorkTextContent = classnames(
     flex('flex'),
     flexDirection('flex-col'),
+    justifyContent('justify-center', 'md:justify-start'),
+    alignItems('items-center', 'md:items-start'),
+    padding('pt-5', 'md:pt-0'),
     maxWidth('max-w-[565px]'),
     position('absolute'),
     inset('top-[-100px]'),
@@ -74,13 +80,13 @@ export const sHowWeWorkContentWrapper = classnames(
 )
 
 export const sHowWeWorkTextTitle = classnames(
-    fontSize('text-heading4'),
+    fontSize('text-heading5', 'md:text-heading4'),
     fontWeight('font-medium'),
     textColor('text-primary-coffee')
 )
 
 export const sHowWeWorkTextDescription = classnames(
-    fontSize('text-heading5'),
+    fontSize('text-large', 'md:text-heading5'),
     fontWeight('font-normal'),
     textColor('text-secondary-gray2')
 )
