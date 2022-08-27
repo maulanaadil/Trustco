@@ -1,60 +1,86 @@
-import classnames from 'tailwindcss-classnames'
+import classnames, {
+    alignItems,
+    flex,
+    flexDirection,
+    fontSize,
+    fontWeight,
+    height,
+    inset,
+    justifyContent,
+    margin,
+    maxHeight,
+    maxWidth,
+    opacity,
+    padding,
+    position,
+    textAlign,
+    textColor,
+    transitionDuration,
+    transitionProperty,
+    transitionTimingFunction,
+    width,
+    zIndex,
+} from 'tailwindcss-classnames'
 
-export const sPinSpacer = classnames('w-full', 'h-[9000px]', 'relative')
+export const sPinSpacer = classnames(
+    width('w-full'),
+    height('h-[9000px]'),
+    position('relative')
+)
 
-export const sHowWeWork = classnames('w-full', 'absolute')
+export const sHowWeWork = classnames(width('w-full'), position('absolute'))
 
-export const sHowWeWorkContainer = classnames('fixed')
+export const sHowWeWorkContainer = classnames(position('fixed'))
 
 export const sHowWeWorkTitle = classnames(
-    'text-heading2',
-    'font-medium',
-    'text-primary-black',
-    'text-center',
-    'mx-auto',
-    'pt-[40px]'
+    fontSize('text-heading2'),
+    fontWeight('font-medium'),
+    textColor('text-primary-black'),
+    textAlign('text-center'),
+    margin('mx-auto'),
+    padding('pt-[40px]')
 )
 
 export const sHowWeWorkContent = classnames(
-    'flex',
-    'justify-center',
-    'items-center',
-    'mx-auto',
-    'max-w-[1102px]',
-    'z-10'
+    flex('flex'),
+    justifyContent('justify-center'),
+    alignItems('items-center'),
+    margin('mx-auto'),
+    maxWidth('max-w-[1102px]'),
+    zIndex('z-10')
 )
 
 export const sHowWeWorkAnimationWrapper = classnames(
-    'w-max-[438px]',
-    'h-max-[524px]'
+    maxWidth('w-max-[438px]'),
+    maxHeight('h-max-[524px]')
 )
 
 export const sHowWeWorkTextContent = classnames(
-    'flex',
-    'flex-col',
-    'max-w-[565px]',
-    'absolute',
-    'top-[-100px]',
-    'opacity-0',
-    'transition-opacity',
-    'ease-out',
-    'duration-700'
+    flex('flex'),
+    flexDirection('flex-col'),
+    maxWidth('max-w-[565px]'),
+    position('absolute'),
+    inset('top-[-100px]'),
+    opacity('opacity-0'),
+    transitionProperty('transition-opacity'),
+    transitionTimingFunction('ease-out'),
+    transitionDuration('duration-700')
 )
 
 export const sHowWeWorkContentWrapper = classnames(
-    'relative',
-    'w-3/4',
-    'h-full'
+    position('relative'),
+    width('w-3/4'),
+    height('h-full')
 )
 
 export const sHowWeWorkTextTitle = classnames(
-    'text-heading4',
-    'font-medium',
-    'text-primary-coffee'
+    fontSize('text-heading4'),
+    fontWeight('font-medium'),
+    textColor('text-primary-coffee')
 )
 
 export const sHowWeWorkTextDescription = classnames(
-    'text-heading5',
-    'font-normal',
-    'text-secondary-gray2'
+    fontSize('text-heading5'),
+    fontWeight('font-normal'),
+    textColor('text-secondary-gray2')
 )

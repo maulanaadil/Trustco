@@ -1,29 +1,42 @@
-import { classnames } from 'tailwindcss-classnames'
+import classnames, {
+    alignItems,
+    contrast,
+    flex,
+    gap,
+    grid,
+    gridColumn,
+    height,
+    justifyContent,
+    margin,
+    objectFit,
+    opacity,
+    padding,
+    width,
+} from 'tailwindcss-classnames'
 
 export const sClient = classnames('w-full')
 
 export const sClientWrapper = classnames(
-    'max-w-[900px]',
-    'h-full',
-    'grid',
-    'grid-cols-4',
-    'gap-x-[50px]',
-    'gap-y-[30px]',
-    'p-[30px]',
-    'm-auto'
+    width('max-w-[900px]'),
+    height('h-full'),
+    grid('grid'),
+    gridColumn('grid-cols-4'),
+    gap('gap-x-[50px]', 'gap-y-[30px]'),
+    padding('p-[30px]'),
+    margin('m-auto')
 )
 
 export const sClientLogoWrapper = classnames(
-    'w-full',
-    'h-full',
-    'flex',
-    'justify-center',
-    'items-center'
+    width('w-full'),
+    height('h-full'),
+    flex('flex'),
+    justifyContent('justify-center'),
+    alignItems('items-center')
 )
 
 export const sClientLogo = classnames(
-    'object-cover',
-    'm-auto',
-    'contrast-0',
-    'opacity-80'
+    objectFit('object-cover'),
+    margin('m-auto'),
+    contrast('contrast-0'),
+    opacity('opacity-80')
 )

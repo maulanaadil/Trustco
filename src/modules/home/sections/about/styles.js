@@ -1,47 +1,58 @@
-import { classnames } from 'tailwindcss-classnames'
+import classnames, {
+    display,
+    flex,
+    fontSize,
+    fontWeight,
+    gap,
+    inset,
+    margin,
+    padding,
+    position,
+    textColor,
+    width,
+    zIndex,
+} from 'tailwindcss-classnames'
 
-export const sAbout = classnames('w-full', 'relative')
+export const sAbout = classnames(display('w-full'), position('relative'))
 
 export const sAboutContent = classnames(
-    'flex',
-    'gap-[60px]',
-    'mx-auto',
-    'py-[60px]',
-    'max-w-[926px]',
-    'z-10'
+    flex('flex'),
+    gap('gap-[60px]'),
+    margin('mx-auto'),
+    padding('py-[60px]'),
+    width('max-w-[926px]'),
+    zIndex('z-10')
 )
 
 export const sAboutTitle = classnames(
-    'text-heading2',
-    'font-medium',
-    'text-primary-coffee',
-    'w-3/4'
+    fontSize('text-heading2'),
+    fontWeight('font-medium'),
+    textColor('text-primary-coffee'),
+    width('w-3/4')
 )
 
 export const sAboutTitleSpan = classnames(
-    'text-heading2',
-    'font-medium',
-    'text-primary-black'
+    fontSize('text-heading2'),
+    fontWeight('font-medium'),
+    textColor('text-primary-black')
 )
 
 export const sAboutDescription = classnames(
-    'text-large',
-    'font-normal',
-    'text-secondary-gray2'
+    fontSize('text-large'),
+    fontWeight('font-normal'),
+    textColor('text-secondary-gray2')
 )
 
 export const sFloatBlobShape = classnames(
-    'absolute',
-    'left-[-50px]',
-    'top-[-20px]',
-    'max-w-[500px]',
-    'z-[-2]'
+    position('absolute'),
+    inset('left-[-50px]', 'top-[-20px]'),
+    width('max-w-[500px]'),
+    zIndex('z-[-2]')
 )
 
 export const sFloatBlobOutlineShape = classnames(
-    'absolute',
-    'left-[-50px]',
-    'top-[-6px]',
-    'max-w-[500px]',
-    'z-[-2]'
+    position('absolute'),
+    inset('left-[-50px]', 'top-[-6px]'),
+    width('max-w-[500px]'),
+    zIndex('z-[-2]')
 )

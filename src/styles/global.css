@@ -26,8 +26,4 @@ body {
     .card-transition {
         @apply transition-all ease-out duration-500;
     }
-
-    .logo-footer {
-        @apply justify-start !important;
-    }
 }

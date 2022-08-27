@@ -1,3 +1,7 @@
-import classnames from 'tailwindcss-classnames'
+import classnames, { display, width, height } from 'tailwindcss-classnames'
 
-export const sHome = classnames('relative', 'w-full', 'h-full')
+export const sHome = classnames(
+    display('relative'),
+    width('w-full'),
+    height('h-full')
+)

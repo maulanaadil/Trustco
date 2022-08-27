@@ -32,6 +32,7 @@ export default function Button({
             )}
             onClick={onClick}
             type={type}
+            disabled={disabled}
             {...otherProps}
         >
             {icon} {children}

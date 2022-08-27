@@ -1,19 +1,25 @@
-import classnames from 'tailwindcss-classnames'
+import classnames, {
+    alignItems,
+    backgroundColor,
+    display,
+    gap,
+    justifyContent,
+    padding,
+    width,
+} from 'tailwindcss-classnames'
 
 export const sHeader = classnames(
-    'w-full',
-    'bg-secondary-onyx',
-    'max-h-[70px]',
-    'flex',
-    'items-center',
-    'justify-between',
-    'px-[130px]',
-    'py-[14px]'
+    display('flex'),
+    width('w-full', 'max-h-[70px]'),
+    backgroundColor('bg-secondary-onyx'),
+    alignItems('items-center'),
+    justifyContent('justify-between'),
+    padding('px-[130px]', 'py-[14px]')
 )
 
 export const sWrapperNavItem = classnames(
-    'flex',
-    'items-center',
-    'gap-[25px]',
-    'p-[10px]'
+    display('flex'),
+    alignItems('items-center'),
+    gap('gap-[25px]'),
+    padding('p-[10px]')
 )

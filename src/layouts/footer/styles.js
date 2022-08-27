@@ -1,63 +1,85 @@
-import { classnames } from 'tailwindcss-classnames'
+import classnames, {
+    width,
+    grid,
+    gridColumn,
+    gap,
+    margin,
+    padding,
+    gridAutoRows,
+    justifyContent,
+    fontSize,
+    textColor,
+    fontWeight,
+    transitionProperty,
+    backgroundColor,
+    borderColor,
+    transitionDuration,
+    height,
+    display,
+    textDecoration,
+} from 'tailwindcss-classnames'
 
 export const sFooter = classnames('w-full', 'bg-secondary-onyx')
 
 export const sFooterContainer = classnames(
-    'max-w-[1180px]',
-    'grid',
-    'grid-cols-12',
-    'gap-4',
-    'mx-auto',
-    'pt-[40px]',
-    'auto-rows-minmax(250px, auto)'
+    width('max-w-[1180px]'),
+    grid('grid'),
+    gridColumn('grid-cols-12'),
+    gap('gap-4'),
+    margin('mx-auto'),
+    padding('pt-[40px]'),
+    gridAutoRows('auto-rows-minmax(250px, auto)')
 )
 
 export const sFooterContentWrapper = classnames(
-    'col-span-3',
-    'py-[10px]',
-    'px-[10px]'
+    gridColumn('col-span-3'),
+    padding('py-[10px]', 'px-[10px]')
 )
 
-export const sFooterlogo = classnames('logo-footer')
+export const sFooterlogo = classnames(justifyContent('!justify-start'))
 
 export const sFooterTitleItem = classnames(
-    'text-heading6',
-    'text-secondary-white',
-    'font-semibold'
+    fontSize('text-heading6'),
+    textColor('text-secondary-white'),
+    fontWeight('font-semibold')
 )
 
 export const sFooterItem = classnames(
-    'text-normal',
-    'text-secondary-white',
-    'mt-[20px]',
-    'hover:text-primary-white',
-    'transition-all',
-    'duration-200'
+    fontSize('text-normal'),
+    textColor('text-secondary-white', 'hover:text-primary-white'),
+    margin('mt-[20px]'),
+    transitionProperty('transition-all'),
+    transitionDuration('duration-200')
 )
 
-export const sFooterSiteMap = classnames('col-span-12')
+export const sFooterSiteMap = classnames(gridColumn('col-span-12'))
 
 export const sFooterDivider = classnames(
-    'bg-secondary-gray1',
-    'border-none',
-    'h-[0.5px]'
+    backgroundColor('bg-secondary-gray1'),
+    borderColor('border-none'),
+    height('h-[0.5px]')
 )
 
 export const sFooterSiteMapWrapper = classnames(
-    'flex',
-    'justify-between',
-    'py-[18px]'
+    display('flex'),
+    justifyContent('justify-between'),
+    padding('py-[18px]')
 )
 
-export const sFooterCopyright = classnames('text-small', 'text-secondary-gray1')
+export const sFooterCopyright = classnames(
+    fontSize('text-small'),
+    textColor('text-secondary-gray1')
+)
 
-export const sFooterSiteMapItemWrapper = classnames('flex', ' gap-5')
+export const sFooterSiteMapItemWrapper = classnames(
+    display('flex'),
+    gap(' gap-5')
+)
 
 export const sFooterSiteMapItem = classnames(
-    'text-small',
-    'text-secondary-gray1',
-    'no-underline',
-    'hover:text-secondary-white',
-    'transition-all',
-    'duration-200'
+    fontSize('text-small'),
+    textColor('text-secondary-gray1', 'hover:text-secondary-white'),
+    textDecoration('no-underline'),
+    transitionProperty('transition-all'),
+    transitionDuration('duration-200')
 )
