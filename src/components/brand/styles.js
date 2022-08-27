@@ -19,13 +19,13 @@ export const sBrand = classnames(
 )
 
 export const sBrandLogo = classnames(
-    width('w-[40px]'),
-    height('h-[40px]'),
+    width('w-[20px]', 'md:w-[40px]'),
+    height('h-[20px]', 'md:h-[40px]'),
     objectPosition('object-center'),
     objectFit('object-cover')
 )
 
 export const sBrandLogoText = classnames(
-    fontSize('text-normal'),
+    fontSize('text-small', 'md:text-normal'),
     textColor('text-primary-white')
 )
