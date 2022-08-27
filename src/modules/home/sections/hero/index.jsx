@@ -24,7 +24,7 @@ export default function HeroSection() {
     const line3 = 'You Want'
 
     return (
-        <section className={styles.sHero}>
+        <section className={styles.sHero} id='home'>
             <LeftSideLine className={styles.sLeftSideLine} />
             <SquareShape
                 className={styles.sFloatSquareBlackShape}

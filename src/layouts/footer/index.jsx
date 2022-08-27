@@ -18,30 +18,39 @@ export default function Footer() {
                 </div>
                 <div className={styles.sFooterContentWrapper}>
                     <h6 className={styles.sFooterTitleItem}>Get in Touch</h6>
-                    <a href='#'>
+                    <a href='https://wa.me/+6282218081639'>
                         <p className={styles.sFooterItem}>+62 82218081639</p>
                     </a>
-                    <a href='#'>
+                    <a href='mailto: rifki@trustco.my.id'>
                         <p className={styles.sFooterItem}>
-                            rifki@virtuepictures.com
+                            rifki@trustco.my.id
+                        </p>
+                    </a>
+                    <a href='mailto: maulana@trustco.my.id'>
+                        <p className={styles.sFooterItem}>
+                            maulana@trustco.my.id
                         </p>
                     </a>
                 </div>
                 <div className={styles.sFooterContentWrapper}>
                     <h6 className={styles.sFooterTitleItem}>Our Work</h6>
-                    <a href='#'>
+                    <a href='#' target='_blank' rel='noopener noreferrer'>
                         <p className={styles.sFooterItem}>Medium</p>
                     </a>
-                    <a href='#'>
+                    <a
+                        href='https://dribbble.com/maulanaadill'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
                         <p className={styles.sFooterItem}>Dribbles</p>
                     </a>
-                    <a href='#'>
+                    <a href='#' target='_blank' rel='noopener noreferrer'>
                         <p className={styles.sFooterItem}>Behance</p>
                     </a>
-                    <a href='#'>
+                    <a href='#' target='_blank' rel='noopener noreferrer'>
                         <p className={styles.sFooterItem}>Instagram</p>
                     </a>
-                    <a href='#'>
+                    <a href='#' target='_blank' rel='noopener noreferrer'>
                         <p className={styles.sFooterItem}>Github</p>
                     </a>
                 </div>
@@ -52,16 +61,28 @@ export default function Footer() {
                             © 2022 Copyright TrustCo.
                         </p>
                         <div className={styles.sFooterSiteMapItemWrapper}>
-                            <a href='#' className={styles.sFooterSiteMapItem}>
+                            <a
+                                href='#home'
+                                className={styles.sFooterSiteMapItem}
+                            >
                                 Home
                             </a>
-                            <a href='#' className={styles.sFooterSiteMapItem}>
+                            <a
+                                href='#about-us'
+                                className={styles.sFooterSiteMapItem}
+                            >
                                 About us
                             </a>
-                            <a href='#' className={styles.sFooterSiteMapItem}>
+                            <a
+                                href='#projects'
+                                className={styles.sFooterSiteMapItem}
+                            >
                                 Projects
                             </a>
-                            <a href='#' className={styles.sFooterSiteMapItem}>
+                            <a
+                                href='#contacs'
+                                className={styles.sFooterSiteMapItem}
+                            >
                                 Contacts
                             </a>
                         </div>
