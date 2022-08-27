@@ -37,7 +37,7 @@ export const projectItem = [
         id: 4,
         logo: Staycation,
         image: StaycationProject,
-        title: 'Evocative',
+        title: 'Staycation',
         type: 'Marketplace Hotel Integrated System',
         year: '2021',
     },
