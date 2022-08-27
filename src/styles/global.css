@@ -3,7 +3,27 @@
 @tailwind utilities;
 
 *::-webkit-scrollbar {
-  display: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --primary-background-color: #f6f4f2;
+
+    background-color: var(--primary-background-color);
+}
+
+@layer components {
+    .text-content-active {
+        opacity: 1 !important;
+    }
+
+    .card-transition {
+        @apply transition-all ease-out duration-500;
+    }
 }

@@ -7,48 +7,45 @@
   Gatsby minimal starter
 </h1>
 
+Here is the [Design Guide](https://www.figma.com/file/9lOqmbYuAwNyds0Rbe2xq4/Revamp-TrustCo?node-id=65%3A73) for helping the development.
+
+## 🪚 System Requirements
+
+-   [git](https://git-scm.com/) v2.13 or greater
+-   [NodeJS](https://nodejs.org/en/) `16 || 18`
+-   [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable) v1.22.11 or greater
+
+## 👷‍♂️ Stacks
+
+-   Gatsby
+-   Tailwind
+-   classnames
+-   framer
+-   react-lottie
+
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+1.  **Clone repository.**
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    git clone https://github.com/maulanaadil/Trustco.git
     ```
 
-2.  **Start developing.**
+2.  **Install Packages.**
 
-    Navigate into your new site’s directory and start it up.
+    Install all packages using yarn. Remember all prerequisite must be done.
 
     ```shell
-    cd my-gatsby-site/
-    npm run develop
+    cd ./Trustco
+    yarn install
     ```
 
-3.  **Open the code and start customizing!**
+3.  **Running the project**
+
+    After all installed, run the following command to develop the project.
+
+    ```shell
+      yarn run develop
+    ```
 
     Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)

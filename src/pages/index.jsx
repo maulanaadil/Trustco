@@ -1,17 +1,12 @@
-import React from 'react';
-import Layout from '@components/layout';
-import Hero from '@components/hero';
-import About from '@components/about';
-import Project from '@components/project';
+import React from 'react'
 
-const IndexPage = () => {
-  return (
-    <Layout>
-      <Hero />
-      <About />
-      <Project />
-    </Layout>
-  );
-};
+import { Layout } from '@layouts'
+import { HomeModules } from '@modules'
 
-export default IndexPage;
+export default function IndexPage() {
+    return (
+        <Layout>
+            <HomeModules />
+        </Layout>
+    )
+}
