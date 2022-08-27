@@ -13,7 +13,7 @@ module.exports = {
             heading2: ['48px', '58px'],
             heading3: ['40px', '63.61px'],
             heading4: ['36px', 'auto'],
-            heading5: ['32px', 'auto'],
+            heading5: ['32px', '50px'],
             heading6: ['20px', '22px'],
             large: ['24px', '38.17px'],
             medium: ['18px', '25.2px'],
