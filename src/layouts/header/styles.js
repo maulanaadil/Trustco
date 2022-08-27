@@ -93,12 +93,15 @@ export const smHeaderContainer = classnames(
 export const smHeaderResponsiveWrapper = classnames(
     padding('py-[20px]', 'px-[20px]'),
     flex('flex'),
-    flexDirection('flex-col')
+    flexDirection('flex-col'),
+    alignItems('items-center')
 )
 
 export const smHeaderButtonCloseWrapper = classnames(
     flex('flex'),
-    justifyContent('justify-end')
+    width('w-full'),
+    justifyContent('!justify-end'),
+    alignItems('items-end')
 )
 
 export const smIconXMark = classnames(

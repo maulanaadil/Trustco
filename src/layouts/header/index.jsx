@@ -79,6 +79,16 @@ export default function Header() {
                                 {item.name}
                             </NavItem>
                         ))}
+                        <Button
+                            size='normal'
+                            variant='primary'
+                            fullWidth={true}
+                            type='button'
+                            className='mt-[16px]'
+                            onClick={() => {}}
+                        >
+                            Reach us
+                        </Button>
                     </div>
                 </motion.div>
             )}
