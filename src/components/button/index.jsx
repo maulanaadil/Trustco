@@ -11,6 +11,7 @@ export default function Button({
     onClick,
     variant,
     size,
+    className,
     disabled,
     disabledOutline,
     fullWidth,
@@ -28,7 +29,8 @@ export default function Button({
                     [styles.sButtonDisabled]: disabled,
                     [styles.sButtonDisabledOutline]: disabledOutline,
                     [styles.sButtonFullWidth]: fullWidth,
-                }
+                },
+                className
             )}
             onClick={onClick}
             type={type}
@@ -43,6 +45,7 @@ export default function Button({
 Button.propTypes = {
     children: PropTypes.node.isRequired,
     onClick: PropTypes.func.isRequired,
+    className: PropTypes.string,
     variant: PropTypes.oneOf(['primary', 'secondary']).isRequired,
     size: PropTypes.oneOf(['normal', 'large']),
     disabled: PropTypes.bool,

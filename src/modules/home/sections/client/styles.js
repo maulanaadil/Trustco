@@ -29,6 +29,7 @@ export const sClientWrapper = classnames(
 export const sClientLogoWrapper = classnames(
     width('w-full'),
     height('h-full'),
+    grid('col-span-2', 'md:col-span-1'),
     flex('flex'),
     justifyContent('justify-center'),
     alignItems('items-center')

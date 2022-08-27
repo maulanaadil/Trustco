@@ -16,7 +16,7 @@ export const sProgressBar = classnames(
     width('w-full'),
     height('h-1'),
     zIndex('z-50'),
-    backdropBlur('backdrop-blur-3xl'),
+    backdropBlur('md:backdrop-blur-3xl'),
     backgroundColor('bg-transparent'),
     dropShadow('drop-shadow-lg'),
     inset('top-0')

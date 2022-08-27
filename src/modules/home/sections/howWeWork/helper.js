@@ -199,4 +199,17 @@ export const containerDisplayOnChange = (breakpoint) => {
         document.getElementById('how-we-work').style.position = 'sticky'
         document.getElementById('how-we-work').style.bottom = '0'
     }
+
+    if (window.innerWidth < 400) {
+        if (breakpoint > 1400) {
+            document.getElementById('how-we-work').style.position = 'fixed'
+            document.getElementById('how-we-work').style.top = '0'
+        } else if (breakpoint < 1400) {
+            document.getElementById('how-we-work').style.position = 'static'
+        }
+        if (breakpoint > 9500) {
+            document.getElementById('how-we-work').style.position = 'sticky'
+            document.getElementById('how-we-work').style.bottom = '0'
+        }
+    }
 }

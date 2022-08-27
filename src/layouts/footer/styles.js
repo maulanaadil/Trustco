@@ -17,6 +17,8 @@ import classnames, {
     height,
     display,
     textDecoration,
+    flexDirection,
+    alignItems,
 } from 'tailwindcss-classnames'
 
 export const sFooter = classnames('w-full', 'bg-secondary-onyx')
@@ -27,12 +29,12 @@ export const sFooterContainer = classnames(
     gridColumn('grid-cols-12'),
     gap('gap-4'),
     margin('mx-auto'),
-    padding('pt-[40px]'),
+    padding('pt-[40px]', 'px-[10px]', 'md:px-0'),
     gridAutoRows('auto-rows-minmax(250px, auto)')
 )
 
 export const sFooterContentWrapper = classnames(
-    gridColumn('col-span-3'),
+    gridColumn('col-span-6', 'md:col-span-3'),
     padding('py-[10px]', 'px-[10px]')
 )
 
@@ -62,7 +64,10 @@ export const sFooterDivider = classnames(
 
 export const sFooterSiteMapWrapper = classnames(
     display('flex'),
-    justifyContent('justify-between'),
+    flexDirection('flex-col', 'md:flex-row'),
+    gap('gap-y-3', 'md:gap-y-0'),
+    justifyContent('justify-center', 'md:justify-between'),
+    alignItems('items-center', 'md:items-start'),
     padding('py-[18px]')
 )
 
