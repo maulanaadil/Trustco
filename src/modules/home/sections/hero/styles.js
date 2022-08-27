@@ -34,8 +34,7 @@ export const sHeroContent = classnames(
     justifyContent('justify-center'),
     alignItems('items-center'),
     position('absolute'),
-    inset('top-[40px]'),
-    inset('left-0', 'right-0'),
+    inset('top-[40px]', 'left-0', 'right-0'),
     margin('m-auto')
 )
 

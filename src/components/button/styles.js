@@ -16,7 +16,6 @@ import classnames, {
     borderColor,
     dropShadow,
     borderWidth,
-    pointerEvents,
 } from 'tailwindcss-classnames'
 
 export const sButton = classnames(

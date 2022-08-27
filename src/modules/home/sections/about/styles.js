@@ -45,16 +45,14 @@ export const sAboutDescription = classnames(
 
 export const sFloatBlobShape = classnames(
     position('absolute'),
-    inset('left-[-50px]'),
-    inset('top-[-20px]'),
+    inset('left-[-50px]', 'top-[-20px]'),
     width('max-w-[500px]'),
     zIndex('z-[-2]')
 )
 
 export const sFloatBlobOutlineShape = classnames(
     position('absolute'),
-    inset('left-[-50px]'),
-    inset('top-[-6px]'),
+    inset('left-[-50px]', 'top-[-6px]'),
     width('max-w-[500px]'),
     zIndex('z-[-2]')
 )

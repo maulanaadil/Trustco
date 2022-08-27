@@ -21,8 +21,7 @@ export const sClientWrapper = classnames(
     height('h-full'),
     grid('grid'),
     gridColumn('grid-cols-4'),
-    gap('gap-x-[50px]'),
-    gap('gap-y-[30px]'),
+    gap('gap-x-[50px]', 'gap-y-[30px]'),
     padding('p-[30px]'),
     margin('m-auto')
 )

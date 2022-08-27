@@ -5,19 +5,27 @@ import classnames, {
     gap,
     objectPosition,
     objectFit,
+    width,
+    height,
+    fontSize,
+    textColor,
 } from 'tailwindcss-classnames'
 
 export const sBrand = classnames(
-    display('flex', 'justify-center', 'items-center'),
+    display('flex'),
     justifyContent('justify-center'),
     alignItems('items-center'),
     gap('gap-[8px]')
 )
 
 export const sBrandLogo = classnames(
-    display('w-[40px]', 'h-[40px]'),
+    width('w-[40px]'),
+    height('h-[40px]'),
     objectPosition('object-center'),
     objectFit('object-cover')
 )
 
-export const sBrandLogoText = classnames('text-normal', 'text-primary-white')
+export const sBrandLogoText = classnames(
+    fontSize('text-normal'),
+    textColor('text-primary-white')
+)
