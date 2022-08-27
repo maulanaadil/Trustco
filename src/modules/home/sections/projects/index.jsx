@@ -7,6 +7,7 @@ import * as styles from './styles'
 import { BlobShape, BlobOutlineShape } from './assets'
 import StayCationLogo from './assets/logoClient/staycation.png'
 import StayCation from './assets/logoClient/staycation-project.png'
+import { projectItem } from './models'
 
 export default function ProjectsSection() {
     return (
@@ -24,38 +25,16 @@ export default function ProjectsSection() {
             <BlobShape className='absolute max-w-[520px] left-[-50px] bottom-0 z-[-2]' />
             <BlobOutlineShape className='absolute max-w-[520px] left-[-50px] bottom-[-20px] z-[-2]' />
             <div className={styles.sProjectContainer}>
-                <ProjectItem
-                    id={1}
-                    logo={StayCationLogo}
-                    image={StayCation}
-                    title='Staycation'
-                    type='Marketplace Hotel Integrated System'
-                    year='2021'
-                />
-                <ProjectItem
-                    id={1}
-                    logo={StayCationLogo}
-                    image={StayCation}
-                    title='Staycation'
-                    type='Marketplace Hotel Integrated System'
-                    year='2021'
-                />
-                <ProjectItem
-                    id={1}
-                    logo={StayCationLogo}
-                    image={StayCation}
-                    title='Staycation'
-                    type='Marketplace Hotel Integrated System'
-                    year='2021'
-                />
-                <ProjectItem
-                    id={1}
-                    logo={StayCationLogo}
-                    image={StayCation}
-                    title='Staycation'
-                    type='Marketplace Hotel Integrated System'
-                    year='2021'
-                />
+                {projectItem.map(({ id, title, image, logo, type, year }) => (
+                    <ProjectItem
+                        id={id}
+                        logo={logo}
+                        image={image}
+                        title={title}
+                        type={type}
+                        year={year}
+                    />
+                ))}
             </div>
         </section>
     )
@@ -66,11 +45,13 @@ function ProjectItem({ id, logo, image, title, type, year }) {
         <div className={styles.sProjectItem}>
             <div className={styles.sProjectItemImageContainer}>
                 <div className={styles.sProjectItemOverlay}>
-                    <img
-                        src={logo}
-                        alt={`logo-${id}`}
-                        className={styles.sProjectItemLogo}
-                    />
+                    <div className={styles.sProjectItemImageContainerWrapper}>
+                        <img
+                            src={logo}
+                            alt={`logo-${id}`}
+                            className={styles.sProjectItemLogo}
+                        />
+                    </div>
                 </div>
                 <figure className={styles.sProjectItemImageWrapper}>
                     <img

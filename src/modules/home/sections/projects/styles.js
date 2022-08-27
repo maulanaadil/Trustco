@@ -105,10 +105,14 @@ export const sProjectItemOverlay = classnames(
 )
 
 export const sProjectItemLogo = classnames(
-    height('h-[150px]'),
+    width('w-full'),
+    height('h-full'),
     objectFit('object-cover'),
-    backgroundPosition('bg-center'),
     backgroundSize('bg-cover')
+)
+
+export const sProjectItemImageContainerWrapper = classnames(
+    maxWidth('max-w-[250px]')
 )
 
 export const sProjectItemImageWrapper = classnames(
