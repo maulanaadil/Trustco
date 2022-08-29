@@ -10,7 +10,7 @@ export default function Brand({ className }) {
     return (
         <div className={classnames(styles.sBrand, className)}>
             <Logo className={styles.sBrandLogo} />
-            <h6 className={styles.sBrandLogoText}>TrustCo</h6>
+            <h6 className={styles.sBrandLogoText}>TrustcoTech</h6>
         </div>
     )
 }

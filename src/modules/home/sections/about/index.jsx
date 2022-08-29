@@ -35,11 +35,11 @@ export default function AboutSection() {
             <div className={styles.sAboutContent}>
                 <h4 className={styles.sAboutTitle}>
                     About us{'\n'}
-                    <span className={styles.sAboutTitleSpan}>TrustCo</span>
+                    <span className={styles.sAboutTitleSpan}>TrustcoTech</span>
                 </h4>
                 <p className={styles.sAboutDescription}>
-                    TrustCo is a creative technology company based in Bandung,
-                    Indonesia. Our team consists of people who are very
+                    TrustcoTech is a creative technology company based in
+                    Bandung, Indonesia. Our team consists of people who are very
                     experienced and passionate in providing the best solutions
                     for clients.
                 </p>
