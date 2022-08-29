@@ -5,7 +5,7 @@ import * as styles from './styles'
 
 export default function Footer() {
     return (
-        <footer className={styles.sFooter}>
+        <footer className={styles.sFooter} id='footer'>
             <div className={styles.sFooterContainer}>
                 <div className={styles.sFooterContentWrapper}>
                     <Brand className={styles.sFooterlogo} />
