@@ -13,6 +13,6 @@ export const navItem = [
     },
     {
         name: 'Contact',
-        to: '#contact',
+        to: '#footer',
     },
 ]

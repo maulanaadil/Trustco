@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.8",
+    "dotenv": "^16.0.1",
     "framer-motion": "^7.2.0",
     "gatsby": "^4.21.1",
     "gatsby-alias-imports": "^1.0.6",
