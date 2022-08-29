@@ -58,7 +58,7 @@ export default function Footer() {
                     <hr className={styles.sFooterDivider} />
                     <div className={styles.sFooterSiteMapWrapper}>
                         <p className={styles.sFooterCopyright}>
-                            © 2022 Copyright TrustCo.
+                            © 2022 Copyright TrustcoTech.
                         </p>
                         <div className={styles.sFooterSiteMapItemWrapper}>
                             <a
@@ -80,7 +80,7 @@ export default function Footer() {
                                 Projects
                             </a>
                             <a
-                                href='#contacs'
+                                href='#footer'
                                 className={styles.sFooterSiteMapItem}
                             >
                                 Contacts

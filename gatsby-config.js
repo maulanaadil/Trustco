@@ -4,12 +4,12 @@ require('dotenv').config({
 
 module.exports = {
     siteMetadata: {
-        title: `TrusctCo`,
+        title: `TrustcoTech`,
         siteUrl: `https://trustcotech.my.id/`,
-        description: `Trusco is a quality modern website creation service that
+        description: `TrustcoTech is a quality modern website creation service that
                 prioritizes quality and was developed by experienced developers
                 and designers.`,
-        author: `TrustCo`,
+        author: `TrustcoTech`,
         keywords: `#Web Development, #Web Design, #Software Development`,
         icon: `assets/favicon.ico`,
     },
@@ -36,8 +36,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: 'Trustco',
-                short_name: 'Trustco',
+                name: 'TrustcoTech',
+                short_name: 'TrustcoTech',
                 start_url: '/',
                 display: 'standalone',
                 icon: 'src/assets/favicon.ico', // This path is relative to the root of the site.
