@@ -1,3 +1,7 @@
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
     siteMetadata: {
         title: `TrusctCo`,
@@ -38,6 +42,18 @@ module.exports = {
                 display: 'standalone',
                 icon: 'src/assets/favicon.ico', // This path is relative to the root of the site.
                 crossOrigin: `use-credentials`,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-chatwoot`,
+            options: {
+                baseUrl: 'https://app.chatwoot.com', // Required
+                websiteToken: process.env.GATSBY_LIVE_CHAT_TOKEN, // Required
+                includeInDevelopment: true, // Optional
+                chatwootSettings: {
+                    position: 'right',
+                    type: 'standard',
+                }, // Optional
             },
         },
     ],
