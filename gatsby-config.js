@@ -40,5 +40,18 @@ module.exports = {
                 crossOrigin: `use-credentials`,
             },
         },
+        {
+            resolve: `gatsby-plugin-chatwoot`,
+            options: {
+              baseUrl: "https://app.chatwoot.com", // Required
+              websiteToken: "cwE1Ew9wKJMz62WNx3eCWnHs", // Required
+              includeInDevelopment: true, // Optional
+              chatwootSettings: {
+                "position":"right",
+                "type":"standard",
+                "launcherTitle":"Contact Us Here"
+              }, // Optional
+            },
+        },
     ],
 }
