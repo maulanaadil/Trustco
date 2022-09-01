@@ -11,7 +11,8 @@
     "extends": [
         "eslint:recommended", // use recommended configs
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "prettier"
     ],
     "rules": {
         "no-anonymous-exports-page-templates": "warn",
