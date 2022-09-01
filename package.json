@@ -16,12 +16,11 @@
         "lint": "eslint --ignore-path .gitignore . --ext js --ext jsx",
         "lint-fix": "eslint \"**/*.{js,jsx}\" --fix",
         "precommit": "lint-staged",
-        "prepare": "husky install",
-        "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{js, jsx, json,css,html}\""
+        "prepare": "husky install"
     },
     "lint-staged": {
         "src/**/*.{jsx, js, json, css,html}": [
-            "yarn run prettier:check"
+            "prettier --write"
         ]
     },
     "husky": {
