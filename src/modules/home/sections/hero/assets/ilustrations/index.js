@@ -10,14 +10,14 @@ import PillShape from './pillShape'
 import DotShape from './dotShape'
 
 export {
-  RightSideLine,
-  LeftSideLine,
-  SquareShape,
-  TestingEllipseShape,
-  PolygonShape,
-  ChatDevelopmentShape,
-  DesignPillShape,
-  HalfEllipseShape,
-  PillShape,
-  DotShape,
+    RightSideLine,
+    LeftSideLine,
+    SquareShape,
+    TestingEllipseShape,
+    PolygonShape,
+    ChatDevelopmentShape,
+    DesignPillShape,
+    HalfEllipseShape,
+    PillShape,
+    DotShape,
 }

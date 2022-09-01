@@ -18,6 +18,8 @@
         "no-anonymous-exports-page-templates": "warn",
         "limited-exports-page-templates": "warn",
         "linebreak-style": "off",
-        "semi": 0
+        "semi": 0,
+        "import/no-anonymous-default-export": "off"
+        "react/require-default-props": "off"
     }
 }

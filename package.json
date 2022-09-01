@@ -45,6 +45,7 @@
         "gatsby-transformer-sharp": "^4.21.0",
         "lottie-web": "^5.9.6",
         "prettier": "^2.7.1",
+        "prop-types": "^15.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-helmet": "^6.1.0",
