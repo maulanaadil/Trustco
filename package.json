@@ -16,12 +16,19 @@
         "lint": "eslint \"**/*.{js,jsx}\"",
         "lint-fix": "eslint \"**/*.{js,jsx}\" --fix",
         "precommit": "lint-staged",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{js, jsx, json,css,html}\""
     },
     "lint-staged": {
         "src/**/*.{jsx, js, json, css,html}": [
-            "prettier --write"
+            "yarn run prettier:check"
         ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn run prettier:check",
+            "pre-push": "yarn run clean"
+        }
     },
     "dependencies": {
         "@heroicons/react": "^2.0.8",
