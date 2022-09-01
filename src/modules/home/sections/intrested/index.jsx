@@ -1,9 +1,29 @@
 import { Button } from '@components'
-import React from 'react'
+import React, { useState } from 'react'
 
 import * as styles from './styles'
 
 export default function IntrestedSection() {
+    const [isPopupOpen, setIsPopupOpen] = useState(false)
+    const handleClickPopupOpen = () => {
+        
+        let wootWidgetBubble1 = document.getElementById('woot-widget-bubble-1');
+        let wootWidgetBubble2 = document.getElementById('woot-widget-bubble-2');
+        let wootWidgetHolder = document.getElementById('woot-widget-holder');
+        if(wootWidgetBubble1 !== undefined && wootWidgetHolder !== null && wootWidgetBubble2 !== undefined) {
+            if(isPopupOpen == false) {
+                wootWidgetHolder.classList.remove('woot--hide');
+                wootWidgetBubble1.classList.add('woot--hide');
+                wootWidgetBubble2.classList.remove('woot--hide');
+                setIsPopupOpen(!isPopupOpen);
+            }else{
+                wootWidgetHolder.classList.add('woot--hide');
+                wootWidgetBubble1.classList.remove('woot--hide');
+                wootWidgetBubble2.classList.add('woot--hide');
+                setIsPopupOpen(!isPopupOpen);
+            }
+        }
+    }
     return (
         <div className={styles.sIntrested}>
             <div className={styles.sIntrestedContent}>
@@ -16,7 +36,7 @@ export default function IntrestedSection() {
                     size='large'
                     variant='secondary'
                     type='button'
-                    onClick={() => {}}
+                    onClick={handleClickPopupOpen}
                 >
                     Start a Project
                 </Button>

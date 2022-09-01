@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 import { Brand, Button } from '@components'
@@ -10,13 +10,42 @@ import NavItem from './components/navitem'
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
-
+    const [isPopupOpen, setIsPopupOpen] = useState(false)
     const handleClickOpen = () => {
         setIsOpen(!isOpen)
     }
 
     const handleClickClose = () => {
         setIsOpen(!isOpen)
+    }
+    useEffect(() => {
+        var wootWidgetBubble1 = document.getElementsByClassName('woot-widget-bubble')[0];
+        var wootWidgetBubble2 = document.getElementsByClassName('woot-widget-bubble')[1];
+        var wootWidgetHolder = document.getElementsByClassName('woot-widget-holder')[0];
+        if(wootWidgetBubble1 !== undefined && wootWidgetHolder !== undefined && wootWidgetBubble2 !== undefined) {
+            wootWidgetBubble1.setAttribute('id', 'woot-widget-bubble-1');
+            wootWidgetBubble2.setAttribute('id', 'woot-widget-bubble-2');
+            wootWidgetHolder.setAttribute('id', 'woot-widget-holder');
+        }  
+    })
+    const handleClickPopupOpen = () => {
+        
+        let wootWidgetBubble1 = document.getElementById('woot-widget-bubble-1');
+        let wootWidgetBubble2 = document.getElementById('woot-widget-bubble-2');
+        let wootWidgetHolder = document.getElementById('woot-widget-holder');
+        if(wootWidgetBubble1 !== undefined && wootWidgetHolder !== null && wootWidgetBubble2 !== undefined) {
+            if(isPopupOpen == false) {
+                wootWidgetHolder.classList.remove('woot--hide');
+                wootWidgetBubble1.classList.add('woot--hide');
+                wootWidgetBubble2.classList.remove('woot--hide');
+                setIsPopupOpen(!isPopupOpen);
+            }else{
+                wootWidgetHolder.classList.add('woot--hide');
+                wootWidgetBubble1.classList.remove('woot--hide');
+                wootWidgetBubble2.classList.add('woot--hide');
+                setIsPopupOpen(!isPopupOpen);
+            }
+        }
     }
 
     return (
@@ -48,7 +77,7 @@ export default function Header() {
                 variant='primary'
                 type='button'
                 className={styles.sButtonHeader}
-                onClick={() => {}}
+                onClick={handleClickPopupOpen}
             >
                 Reach us
             </Button>
@@ -85,7 +114,7 @@ export default function Header() {
                             fullWidth={true}
                             type='button'
                             className='mt-[16px]'
-                            onClick={() => {}}
+                            onClick={handleClickPopupOpen}
                         >
                             Reach us
                         </Button>
