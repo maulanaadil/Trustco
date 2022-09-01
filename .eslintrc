@@ -1,8 +1,22 @@
 {
-    "extends": ["next/core-web-vitals", "airbnb", "prettier"],
+    "parser": "babel-eslint", // uses babel-eslint transforms
+    "settings": {
+        "react": {
+            "version": "detect" // detect react version
+        }
+    },
+    "env": {
+        "node": true // defines things like process.env when generating through node
+    },
+    "extends": [
+        "eslint:recommended", // use recommended configs
+        "plugin:react/recommended",
+        "airbnb"
+    ],
     "rules": {
-        "arrow-body-style": "off",
-        "import/no-extraneous-dependencies": "off",
-        "react/function-component-definition": "off"
+        "no-anonymous-exports-page-templates": "warn",
+        "limited-exports-page-templates": "warn",
+        "linebreak-style": "off",
+        "semi": 0
     }
 }
