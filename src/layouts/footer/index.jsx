@@ -31,6 +31,11 @@ export default function Footer() {
                             maulana@trustcotech.my.id
                         </p>
                     </a>
+                    <a href='mailto: mhmdfaishal@trustcotech.my.id'>
+                        <p className={styles.sFooterItem}>
+                            mhmdfaishal@trustcotech.my.id
+                        </p>
+                    </a>
                 </div>
                 <div className={styles.sFooterContentWrapper}>
                     <h6 className={styles.sFooterTitleItem}>Our Work</h6>
