@@ -3,16 +3,6 @@
     "rules": {
         "arrow-body-style": "off",
         "import/no-extraneous-dependencies": "off",
-        "react/function-component-definition": "off",
-        "import/extensions": [
-            "error",
-            "ignorePackages",
-            {
-                "js": "never",
-                "jsx": "never",
-                "ts": "never",
-                "tsx": "never"
-            }
-        ]
+        "react/function-component-definition": "off"
     }
 }
