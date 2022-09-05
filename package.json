@@ -16,18 +16,16 @@
         "lint": "eslint --ignore-path .gitignore . --ext js --ext jsx",
         "lint-fix": "eslint \"**/*.{js,jsx}\" --fix",
         "precommit": "lint-staged",
-        "prepare": "husky install",
-        "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{js, jsx, json,css,html}\""
+        "prepare": "husky install"
     },
     "lint-staged": {
         "src/**/*.{jsx, js, json, css,html}": [
-            "yarn run prettier:check"
+            "prettier --write"
         ]
     },
     "husky": {
         "hooks": {
-            "pre-commit": "yarn run prettier:check",
-            "pre-push": "yarn run clean"
+            "pre-commit": "lint-staged"
         }
     },
     "dependencies": {
@@ -37,14 +35,15 @@
         "gatsby": "^4.21.1",
         "gatsby-alias-imports": "^1.0.6",
         "gatsby-plugin-chatwoot": "^1.1.0",
-        "gatsby-plugin-image": "^2.21.0",
+        "gatsby-plugin-image": "^2.22.0",
         "gatsby-plugin-manifest": "^4.21.0",
         "gatsby-plugin-react-helmet": "^5.21.0",
-        "gatsby-plugin-sharp": "^4.21.0",
-        "gatsby-source-filesystem": "^4.21.1",
-        "gatsby-transformer-sharp": "^4.21.0",
+        "gatsby-plugin-sharp": "^4.22.0",
+        "gatsby-source-filesystem": "^4.22.0",
+        "gatsby-transformer-sharp": "^4.22.0",
         "lottie-web": "^5.9.6",
         "prettier": "^2.7.1",
+        "prop-types": "^15.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-helmet": "^6.1.0",
@@ -54,10 +53,11 @@
         "autoprefixer": "^10.4.8",
         "babel-eslint": "^10.1.0",
         "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-react": "^7.31.1",
         "gatsby-plugin-eslint": "^4.0.2",
         "gatsby-plugin-postcss": "^5.21.0",
-        "husky": "^8.0.1",
+        "husky": "^8.0.0",
         "lint-staged": "^13.0.3",
         "postcss": "^8.4.16",
         "tailwindcss": "^3.1.8"

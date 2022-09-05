@@ -6,10 +6,10 @@ import ProjectsSection from './projects'
 import IntrestedSection from './intrested'
 
 export {
-  HeroSection,
-  ClientSection,
-  AboutSection,
-  HowWeWorkSection,
-  ProjectsSection,
-  IntrestedSection,
+    HeroSection,
+    ClientSection,
+    AboutSection,
+    HowWeWorkSection,
+    ProjectsSection,
+    IntrestedSection,
 }
