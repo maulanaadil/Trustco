@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import { Button } from '@components'
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
@@ -23,6 +24,7 @@ export default function HeroSection() {
     const line3 = 'You Want'
     const [isPopupOpen, setIsPopupOpen] = useState(false)
     const handleClickPopupOpen = () => {
+        // eslint-disable-next-line no-undef
         const wootWidgetBubble1 = document.getElementById(
             'woot-widget-bubble-1'
         )
@@ -35,7 +37,7 @@ export default function HeroSection() {
             wootWidgetHolder !== null &&
             wootWidgetBubble2 !== undefined
         ) {
-            if (isPopupOpen == false) {
+            if (isPopupOpen === false) {
                 wootWidgetHolder.classList.remove('woot--hide')
                 wootWidgetBubble1.classList.add('woot--hide')
                 wootWidgetBubble2.classList.remove('woot--hide')
