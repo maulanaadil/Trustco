@@ -101,7 +101,8 @@ export const sProjectItemOverlay = classnames(
     backgroundPosition('bg-center'),
     backgroundColor('bg-secondary-onyx'),
     opacity('opacity-[0.9]', 'hover:opacity-0'),
-    transitionProperty('card-transition')
+    transitionProperty('card-transition'),
+    zIndex('z-50')
 )
 
 export const sProjectItemLogo = classnames(

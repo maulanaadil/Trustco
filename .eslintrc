@@ -15,11 +15,12 @@
         "prettier"
     ],
     "rules": {
-        "no-anonymous-exports-page-templates": "warn",
-        "limited-exports-page-templates": "warn",
+        "no-anonymous-exports-page-templates": "off",
+        "limited-exports-page-templates": "off",
         "linebreak-style": "off",
         "semi": 0,
         "import/no-anonymous-default-export": "off",
-        "react/require-default-props": "off"
+        "react/require-default-props": "off",
+        "import/prefer-default-export": "off"
     }
 }
