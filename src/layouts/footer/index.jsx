@@ -18,9 +18,6 @@ export default function Footer() {
                 </div>
                 <div className={styles.sFooterContentWrapper}>
                     <h6 className={styles.sFooterTitleItem}>Get in Touch</h6>
-                    <a href='https://wa.me/+6282218081639'>
-                        <p className={styles.sFooterItem}>+62 82218081639</p>
-                    </a>
                     <a href='mailto: rifki@trustcotech.my.id'>
                         <p className={styles.sFooterItem}>
                             rifki@trustcotech.my.id
@@ -39,8 +36,12 @@ export default function Footer() {
                 </div>
                 <div className={styles.sFooterContentWrapper}>
                     <h6 className={styles.sFooterTitleItem}>Our Work</h6>
-                    <a href='#' target='_blank' rel='noopener noreferrer'>
-                        <p className={styles.sFooterItem}>Medium</p>
+                    <a
+                        href='https://blog.trustcotech.my.id'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        <p className={styles.sFooterItem}>Blog</p>
                     </a>
                     <a
                         href='https://dribbble.com/maulanaadill'
@@ -49,13 +50,18 @@ export default function Footer() {
                     >
                         <p className={styles.sFooterItem}>Dribbles</p>
                     </a>
-                    <a href='#' target='_blank' rel='noopener noreferrer'>
-                        <p className={styles.sFooterItem}>Behance</p>
-                    </a>
-                    <a href='#' target='_blank' rel='noopener noreferrer'>
+                    <a
+                        href='https://www.instagram.com/trustcotech/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
                         <p className={styles.sFooterItem}>Instagram</p>
                     </a>
-                    <a href='#' target='_blank' rel='noopener noreferrer'>
+                    <a
+                        href='https://github.com/TrustCoTech'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
                         <p className={styles.sFooterItem}>Github</p>
                     </a>
                 </div>
