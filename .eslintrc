@@ -23,6 +23,7 @@
         "react/require-default-props": "off",
         "import/prefer-default-export": "off",
         "no-undef": "off",
-        "import/no-unresolved": "off"
+        "import/no-unresolved": "off",
+        "jsx-a11y/anchor-is-valid": "off"
     }
 }
