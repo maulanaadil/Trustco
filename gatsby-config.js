@@ -1,5 +1,5 @@
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
+    path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
@@ -19,6 +19,7 @@ module.exports = {
         'gatsby-plugin-image',
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
+        'gatsby-plugin-sitemap',
         {
             resolve: 'gatsby-alias-imports',
             options: {
@@ -54,6 +55,22 @@ module.exports = {
                     position: 'right',
                     type: 'standard',
                 }, // Optional
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                host: 'https://trustcotech.my.id/',
+                sitemap: 'https://trustcotech.my.id/sitemap.xml',
+                resolveEnv: () => process.env.GATSBY_ENV,
+                env: {
+                    development: {
+                        policy: [{ userAgent: '*', disallow: ['/'] }],
+                    },
+                    production: {
+                        policy: [{ userAgent: '*', allow: '/' }],
+                    },
+                },
             },
         },
     ],
