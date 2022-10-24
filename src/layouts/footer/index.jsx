@@ -18,17 +18,22 @@ export default function Footer() {
                 </div>
                 <div className={styles.sFooterContentWrapper}>
                     <h6 className={styles.sFooterTitleItem}>Get in Touch</h6>
-                    <a href='mailto: rifki@trustcotech.my.id'>
+                    <a href='mailto:rifki@trustcotech.my.id'>
                         <p className={styles.sFooterItem}>
                             rifki@trustcotech.my.id
                         </p>
                     </a>
-                    <a href='mailto: maulana@trustcotech.my.id'>
+                    <a href='mailto:nada@trustcotech.my.id'>
+                        <p className={styles.sFooterItem}>
+                            nada@trustcotech.my.id
+                        </p>
+                    </a>
+                    <a href='mailto:maulana@trustcotech.my.id'>
                         <p className={styles.sFooterItem}>
                             maulana@trustcotech.my.id
                         </p>
                     </a>
-                    <a href='mailto: mhmdfaishal@trustcotech.my.id'>
+                    <a href='mailto:mhmdfaishal@trustcotech.my.id'>
                         <p className={styles.sFooterItem}>
                             mhmdfaishal@trustcotech.my.id
                         </p>
