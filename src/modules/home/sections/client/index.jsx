@@ -2,8 +2,8 @@ import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 import { motion, useInView } from 'framer-motion'
 
+import clients from '../../../../assets/data/clients'
 import * as styles from './styles'
-import { clientItem } from './models'
 
 function ClientLogo({
     src,
@@ -49,11 +49,11 @@ export default function ClientSection() {
     return (
         <section className={styles.sClient}>
             <div className={styles.sClientWrapper}>
-                {clientItem.slice(0, 8).map((item, index) => (
+                {clients.slice(0, 8).map((item, index) => (
                     <ClientLogo
                         src={item.logo}
                         alt={item.alt}
-                        key={index}
+                        key={item.id}
                         custom={index * 0.5}
                     />
                 ))}
@@ -66,6 +66,6 @@ ClientLogo.propTypes = {
     src: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     custom: PropTypes.number,
-    easing: PropTypes.array,
+    easing: PropTypes.arrayOf(PropTypes.number),
     yOffset: PropTypes.number,
 }
