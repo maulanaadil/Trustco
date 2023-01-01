@@ -1,16 +1,23 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-import { StaticImage } from 'gatsby-plugin-image'
 
 import * as styles from './styles'
 
-import { BlobShape, BlobOutlineShape } from './assets'
+import {
+    BlobShape,
+    BlobOutlineShape,
+} from '../../../../assets/ilustration/index'
 
-import Evocative from './assets/logoClient/evocative.png'
-import VirtuePictures from './assets/logoClient/virtue.png'
-import Pandeglang from './assets/logoClient/pandeglang.png'
-import Staycation from './assets/logoClient/staycation.png'
+import Evocative from '../../../../assets/images/logoClient/evocative.png'
+import VirtuePictures from '../../../../assets/images/logoClient/virtue.png'
+import Pandeglang from '../../../../assets/images/logoClient/pandeglang.png'
+import Staycation from '../../../../assets/images/logoClient/staycation.png'
+
+import EvocativeProject from '../../../../assets/images/projects/evocative-project.png'
+import VirtueProject from '../../../../assets/images/projects/virtue-project.png'
+import PandeglangProject from '../../../../assets/images/projects/pandeglang-project.png'
+import StaycationProject from '../../../../assets/images/projects/staycation-project.png'
 
 export default function ProjectsSection() {
     return (
@@ -35,10 +42,10 @@ export default function ProjectsSection() {
                     type='Company Website Revamp'
                     year='2022'
                 >
-                    <StaticImage
+                    <img
                         imgClassName={styles.sProjectItemImage}
                         alt='project-1'
-                        src='./assets/logoClient/evocative-project.png'
+                        src={EvocativeProject}
                     />
                 </ProjectItem>
                 <ProjectItem
@@ -48,10 +55,10 @@ export default function ProjectsSection() {
                     type='Company Website Revamp'
                     year='2022'
                 >
-                    <StaticImage
+                    <img
                         imgClassName={styles.sProjectItemImage}
                         alt='project-2'
-                        src='./assets/logoClient/virtue-project.png'
+                        src={VirtueProject}
                     />
                 </ProjectItem>
                 <ProjectItem
@@ -61,10 +68,10 @@ export default function ProjectsSection() {
                     type='Point of Sales Integrated System'
                     year='2022'
                 >
-                    <StaticImage
-                        imgClassName={styles.sProjectItemImage}
+                    <img
+                        src={PandeglangProject}
                         alt='project-3'
-                        src='./assets/logoClient/pandeglang-project.png'
+                        className={styles.sProjectItemImage}
                     />
                 </ProjectItem>
                 <ProjectItem
@@ -74,10 +81,10 @@ export default function ProjectsSection() {
                     type='Marketplace Hotel Integrated System'
                     year='2021'
                 >
-                    <StaticImage
-                        imgClassName={styles.sProjectItemImage}
+                    <img
+                        src={StaycationProject}
                         alt='project-4'
-                        src='./assets/logoClient/staycation-project.png'
+                        className={styles.sProjectItemImage}
                     />
                 </ProjectItem>
             </div>
